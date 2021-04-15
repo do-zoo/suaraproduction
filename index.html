@@ -17,12 +17,11 @@
         <div class="brand">
             <a href="#" title="Suara Production">
                 <img src="img/logo/logo.png" alt="logo">
-                <!-- <img src="img/logo-fix.png" alt=""> -->
             </a>
         </div>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li><a href="#">DIRECTORS/DOP</a></li>
+                <li><a class="active" href="#">DIRECTORS/DOP</a></li>
                 <li><a href="#">LOCATIONS/CASTING</a></li>
                 <li><a href="#">COMPANY</a></li>
                 <li><a href="#">BIVAK STORIES</a></li>
@@ -30,13 +29,16 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
+        <label id="toggle-menu">
+            <i class="bi bi-list"></i>
+        </label>
         <div class="social">
             <a href="" class="social-item facebook"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
             <a href="" class="social-item twitter"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
             <a href="" class="social-item youtube"><i class="bi bi-youtube" style="font-size: 1.5rem;"></i></a>
             <a href="" class="social-item instagram"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
         </div>
-        <div class="wreaper-container">
+        <!-- <div class="wreaper-container">
             <p class="mode">screen mode</p>
             <div class="wrapper">
                 <label class="label-check">
@@ -44,7 +46,7 @@
                     <span class="checkmark"></span>
                 </label>
             </div>
-        </div>
+        </div> -->
     </div>
 
 
@@ -78,6 +80,14 @@
 
     <script src="js/scirpt.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#toggle-menu').click(function () {
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
 </body>
 
 </html>
