@@ -161,6 +161,7 @@ body {
     background-color: var(--bacground-color);
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
+    -webkit-text-decoration-color: var(--text-color);
     text-decoration-color: var(--text-color);
     /* margin: 50px; */
     /* height: 10000px; */
@@ -177,14 +178,18 @@ body {
     font-family: 'Oswald', sans-serif;
     width: 100%;
     height: 60px;
+    display: -ms-grid;
     display: grid;
     position: fixed;
+    -ms-grid-columns: 120px auto 200px;
     grid-template-columns: 120px auto 200px;
     grid-template-areas:
         "brand navbar social";
+    -ms-grid-row-align: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.95);
     opacity: 0.95;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
     gap: 20px;
     overflow: hidden;
 
@@ -206,7 +211,10 @@ div.brand a img {
 
 .navbar ul.navbar-list {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 50px;
 }
@@ -221,11 +229,14 @@ nav.navbar ul li a {
 nav.navbar ul li a.active,
 nav.navbar ul li a:hover {
     color: #FFA500;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
 .social {
     grid-area: social;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -233,6 +244,8 @@ nav.navbar ul li a:hover {
     right: 0;
     margin-left: 15px;
     gap: 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: rgb(26, 26, 26);
 }
@@ -280,12 +293,21 @@ label#toggle-menu {
         position: fixed;
         width: 100%;
         height: 100vh;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
         background: #ddd;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
         align-items: center;
         top: 60px;
         left: -100%;
+        -webkit-transition: all .5s;
         transition: all .5s;
     }
 
@@ -320,8 +342,14 @@ p.mode {
     /* width: 100%; */
     /* height: 100%; */
     margin-right: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
 }
@@ -344,10 +372,11 @@ p.mode {
     background: #333;
     border-radius: 50px;
     position: absolute;
+    -webkit-transition: .5s;
     transition: .5s;
 }
 
-.label-check .checkmark::before {
+.label-check .checkmark:before {
     content: "";
     width: 44%;
     height: 94%;
@@ -357,6 +386,7 @@ p.mode {
     top: 0;
     left: 0;
     margin: 1.2px;
+    -webkit-transition: .5s;
     transition: .5s;
     background: #fff;
 }
@@ -365,7 +395,8 @@ p.mode {
     background: #fff;
 }
 
-.label-check input:checked+.checkmark::before {
+.label-check input:checked+.checkmark:before {
+    -webkit-transform: translateX(26px);
     transform: translateX(26px);
     background: #333;
 }
