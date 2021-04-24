@@ -179,6 +179,10 @@ body {
 
 /* menu/navbar */
 
+.scrol-fix {
+    overflow: auto;
+}
+
 .menu {
     font-family: 'Oswald', sans-serif;
     width: 100%;
