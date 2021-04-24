@@ -167,6 +167,7 @@ body {
     font-family: 'Poppins', sans-serif;
     -webkit-text-decoration-color: var(--text-color);
     text-decoration-color: var(--text-color);
+    /* max-width: 1240px; */
     /* margin: 50px; */
     /* height: 10000px; */
 }
@@ -274,8 +275,6 @@ section div.hero {
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
-    max-height: 100%;
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
