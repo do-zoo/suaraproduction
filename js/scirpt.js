@@ -1,17 +1,10 @@
-const mode = document.querySelector
-('input#check');
-const html = document.querySelector
-('html');
+// toogle menu
+const selectMenu = document.getElementById ('toggle-menu');
+const showMenu = document.querySelector ('.navbar ul') ;
+selectMenu.addEventListener('click', function(){
+    showMenu.classList.toggle('show');
+    document.body.classList.toggle('lock-scroll');
+});
 
-// ketika tombol diklik
 
-mode.addEventListener('change', 
-function () {
-    // cek mode saat ini lalu ubah 
-    if (html.dataset.screenMode === 'light') {
-        html.dataset.screenMode = 'dark'
-    } else {
-        html.dataset.screenMode = 'light'
-    }
-}
-);
+
