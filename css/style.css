@@ -417,7 +417,7 @@ a.button.has-icon {
     background-position-x: 70%;
     background-repeat: no-repeat;
     visibility: inherit;
-    background-attachment: fixed;
+    overflow-y: scroll;
 }
 
 .layanan .border {
@@ -471,7 +471,7 @@ a.button.has-icon {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 30px;
     margin: 30px auto;
 }
 
@@ -643,5 +643,10 @@ a.button.has-icon {
 
     .layanan-bar {
         flex-direction: column;
+    }
+
+
+    .product-bar {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
