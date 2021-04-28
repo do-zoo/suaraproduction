@@ -332,9 +332,10 @@ header:after {
     background: linear-gradient(to top, #363636, transparent);
 }
 
+/* 
 .opacity {
     opacity: 0;
-}
+} */
 
 
 
@@ -363,7 +364,7 @@ section {
 }
 
 .border {
-    width: 0%;
+    /* width: 0%; */
     max-width: 20%;
     height: 2px;
     background-color: #000;
@@ -435,13 +436,6 @@ a.button.has-icon {
     margin: 30px auto;
 }
 
-.border-fix-small {
-    width: 10%;
-    height: 2px;
-    background-color: #fff;
-    margin: 10px auto;
-}
-
 
 .product {
     background-color: #fff;
@@ -460,7 +454,7 @@ a.button.has-icon {
 }
 
 .product .border {
-    width: 0%;
+    /* width: 0%; */
     max-width: 20%;
     height: 2px;
     background-color: #000;
@@ -492,7 +486,6 @@ a.button.has-icon {
 
 
 .product-content span.icon-circle {
-    /* width: 100%; */
     font-size: 3rem;
     background-color: #000;
     color: #fff;
@@ -506,6 +499,56 @@ a.button.has-icon {
     font-size: 1.5rem;
 }
 
+
+.border-small-white {
+    width: 10%;
+    height: 2px;
+    background-color: #fff;
+    margin: 10px auto;
+}
+
+.border-small-black {
+    width: 10%;
+    height: 2px;
+    background-color: #000;
+    margin: 10px auto;
+}
+
+/* portfolio */
+.portfolio .description {
+    padding-bottom: 30px;
+}
+
+
+
+.portfolio-bar {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+}
+
+
+
+.image-hover a {
+    text-decoration: none;
+    overflow: hidden;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+.image-hover a span p {
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+.image-hover a span p:hover {
+    opacity: 1;
+}
 
 
 

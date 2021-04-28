@@ -8,52 +8,16 @@ const scrollFixMenu = document.querySelector('div.menu');
             scrollFixMenu.classList.toggle('scrol-fix');
         });
 
+//thumbnail image 
+const portfolioThumb = document.querySelector('.portfolio-thumb');
+const imageThumb = document.querySelector('.image-hover');
+const textImageThumb = document.querySelector('.image-hover a span p ');
+const portfolioImage = document.querySelector('.image-hover a img');
 
-//test Parallax Scrolling
-const translate = document.querySelectorAll(".translate");
-const big_title = document.querySelector(".big-title");
-const header = document.querySelector("header");
-const shadow = document.querySelector(".shadow");
-const content = document.querySelector(".content");
-const section = document.querySelector("section");
-// const image_container = document.querySelector(".imgContainer");
-const opacity = document.querySelectorAll(".opacity");
-const border = document.querySelectorAll(".border");
-const layanan = document.querySelector(".layanan");
-const contentParallax = document.querySelector(".parallax-section-holder")
-
-let header_height = header.offsetHeight;
-let section_height = section.offsetHeight;
-//let content_height = content.offsetHeight;
-//let layanan_height = contentParallax.offsetHeight;
-
-window.addEventListener('scroll', () => {
-    let scroll = window.pageYOffset;
-    let sectionY = section.getBoundingClientRect();
-    //let layananY = layanan.getBoundingClientRect();
-    //let layanan_speed = layanan.dataset.speed;
-
-    translate.forEach(element => {
-        let speed = element.dataset.speed;
-        element.style.transform = `translateY(${scroll * speed}px)`;
-    });
-    opacity[0].style.opacity = scroll / (sectionY.top + section_height) * 8;
-    opacity[1].style.opacity = scroll / (sectionY.top + section_height) * 3;
-    opacity[2].style.opacity = scroll / (sectionY.top + section_height) * 1.5;
-
-    big_title.style.opacity = - scroll / (header_height / 2) + 1;
-    shadow.style.height = `${scroll * 0.5 + 300}px`;
-
-    content.style.transform = `translateY(${scroll / (section_height + sectionY.top) * 50 - 50}px)`;
-    // image_container.style.transform = `translateY(${scroll / (section_height + sectionY.top) * -50 + 50}px)`;
-    border.forEach(element => {
-        element.style.width = `${scroll / (sectionY.top + section_height) * 20}%`;
-    });
-
-    //layanan.style.backgroundPositionY = `${(scroll / (sectionY.top * layanan_speed) * 10) + 50}px`;
-
-
-    //border.style.width = `${scroll / (sectionY.top + section_height) * 20}%`;
-});
-
-
+//fuunction
+// let posisiPortfolioThumbY = portfolioThumb.getBoundingClientRect();
+let posisiTextImageL = (imageThumb.clientWidth / 2) - (textImageThumb.clientWidth / 2);
+let posisiTextImageY = (imageThumb.clientHeight / 2) - (textImageThumb.clientHeight / 2);
+let textTop = portfolioThumb.offsetTop;
+textImageThumb.style.top = textTop + 'px';
+textImageThumb.style.padding = posisiTextImageY + 'px ' + posisiTextImageL + 'px';
