@@ -340,7 +340,7 @@ header:after {
 
 
 /* CONTENT */
-section {
+.big-container {
     width: 100%;
     position: relative;
     font-family: var(--font-family-kecil);
@@ -519,14 +519,16 @@ a.button.has-icon {
     padding-bottom: 30px;
 }
 
-
-
-.portfolio-bar {
+.portfolio-content {
     display: grid;
     grid-template-columns: repeat(4, minmax(250px, 1fr));
 }
 
-
+.image-hover {
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+}
 
 .image-hover a {
     text-decoration: none;
@@ -536,20 +538,22 @@ a.button.has-icon {
 }
 
 
-.image-hover a span p {
-    left: 0;
+.image-hover a span {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 10;
     opacity: 0;
     transition: opacity 0.5s;
-
 }
 
-.image-hover a span p:hover {
+.image-hover a span p {
+    padding: 0;
+}
+
+
+
+.image-hover a span:hover {
     opacity: 1;
 }
-
 
 
 /* RESPONSIVE */
