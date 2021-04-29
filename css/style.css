@@ -377,7 +377,7 @@ header:after {
     padding: 0 0 20px;
 }
 
-.description .button-align {
+.button-align {
     width: 25%;
     background-color: black;
     padding: 15px;
@@ -387,7 +387,9 @@ header:after {
     transition: .5s;
 }
 
-.description .button-align:hover {
+
+
+.button-align:hover {
     background-color: #666;
     border-radius: 5px;
 }
@@ -515,13 +517,18 @@ a.button.has-icon {
 }
 
 /* portfolio */
+.portfolio-bar {
+    padding-bottom: 30px;
+}
+
 .portfolio .description {
     padding-bottom: 30px;
 }
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, minmax(225px, 1fr));
+    margin-bottom: 50px;
 }
 
 .image-hover {
@@ -557,6 +564,30 @@ a.button.has-icon {
 }
 
 
+.portfolio-thumb {
+    margin: 20px 0;
+}
+
+.portfolio-thumb>* {
+    margin: 0 0 15px;
+}
+
+.portfolio-thumb h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.portfolio-thumb {}
+
+
+
+
+
+
+.client-brand {
+    margin: 50px auto;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1240px) {
@@ -578,7 +609,7 @@ a.button.has-icon {
         font-size: 4rem;
     }
 
-    .description .button-align {
+    .button-align {
         width: 30%;
         padding: 15px;
     }
@@ -652,7 +683,7 @@ a.button.has-icon {
         font-size: 3rem;
     }
 
-    .description .button-align {
+    .button-align {
         width: 35%;
         padding: 12px;
         border-radius: 6px;
@@ -666,6 +697,9 @@ a.button.has-icon {
         font-size: 1.2rem;
     }
 
+    .portfolio-content {
+        grid-template-columns: repeat(3, minmax(225px, 1fr));
+    }
 }
 
 @media (max-width:768px) {
@@ -683,7 +717,7 @@ a.button.has-icon {
         font-size: 2rem;
     }
 
-    .description .button-align {
+    .button-align {
         width: 220px;
         padding: 10px;
         border-radius: 6px;
@@ -696,5 +730,9 @@ a.button.has-icon {
 
     .product-bar {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio-content {
+        grid-template-columns: repeat(1, minmax(225px, 1fr));
     }
 }
