@@ -37,11 +37,11 @@ for (let i = 0; i < spanImage.length; i++) {
 
 
 
-window.addEventListener('resize', function () {
-    var i = 0;
-    while (i < 1) {
-        setTimeout("location.reload(true);",500);
-        i++;
-    };
+// window.addEventListener('resize', function () {
+//     var i = 0;
+//     while (i < 1) {
+//         setTimeout("location.reload(true);",500);
+//         i++;
+//     };
     
-});
+// });
