@@ -9,7 +9,7 @@
 /* screen mode css */
 :root {
     --text-color: #000;
-    --bacground-color: #ddd;
+    --bacground-color: rgb(255, 253, 253);
     --font-size-p: 1em;
     --font-size-h1: 2.8em;
     --font-size-button: 20px;
@@ -172,9 +172,6 @@ body {
     font-family: 'Poppins', sans-serif;
     -webkit-text-decoration-color: var(--text-color);
     text-decoration-color: var(--text-color);
-    /* max-width: 1240px; */
-    /* margin: 50px; */
-    /* height: 10000px; */
 }
 
 html,
@@ -578,14 +575,92 @@ a.button.has-icon {
     font-weight: 600;
 }
 
+
+/* Client */
+
+.client-brand .description {
+    padding-bottom: 30px;
+}
+
 .client-brand {
     background-color: #fff;
+    margin: 50px auto;
 }
 
 
 
-.client-brand {
-    margin: 50px auto;
+.client-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: auto 50px;
+}
+
+.client-thumb {
+    cursor: pointer;
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: #fff;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px 30px;
+}
+
+.footer-brand span {
+    line-height: 1.5rem;
+    color: #aaa;
+}
+
+.footer-about-content h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.footer-about-content p {
+    color: #aaa;
+    line-height: 1.5rem;
+}
+
+.container-contact h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.contact-content {
+    color: #aaa;
+    line-height: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.contact-content h2 {
+    font-weight: bold;
+}
+
+.address a,
+.no-telpon a,
+.e-mail a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+
+.copyright {
+    font-size: 16px;
+    line-height: 3rem;
+    text-align: center;
+    background-color: #070707;
 }
 
 /* RESPONSIVE */
@@ -700,7 +775,12 @@ a.button.has-icon {
     .portfolio-content {
         grid-template-columns: repeat(3, minmax(225px, 1fr));
     }
+
+    .client-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
+
 
 @media (max-width:768px) {
     :root {
@@ -734,5 +814,20 @@ a.button.has-icon {
 
     .portfolio-content {
         grid-template-columns: repeat(1, minmax(225px, 1fr));
+    }
+
+    .client-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 50px 30px;
+    }
+
+    .copyright {
+        line-height: 2.5rem;
+        font-size: 12px;
     }
 }
