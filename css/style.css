@@ -555,6 +555,7 @@ a.button.has-icon {
 .image-hover a span p {
     color: rgba(255, 255, 255, 1);
     padding: 0;
+    margin: 0;
 }
 
 
@@ -577,10 +578,9 @@ a.button.has-icon {
     font-weight: 600;
 }
 
-.portfolio-thumb {}
-
-
-
+.client-brand {
+    background-color: #fff;
+}
 
 
 

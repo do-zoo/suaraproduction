@@ -10,45 +10,38 @@ const scrollFixMenu = document.querySelector('div.menu');
 
 //thumbnail image 
 const imageThumb = document.querySelector('.image-thumb');
+const firstSpan = document.querySelector('.image-hover a span.first-span');
 const spanImage = document.querySelectorAll('.image-hover a span');
 
-for (let i = 0; i < spanImage.length; i++) {
+
+
+
+
+
 let lebarImage = imageThumb.getBoundingClientRect().width;
 let tinggiImage = imageThumb.offsetHeight;
-let lebarSpan = spanImage[i].getBoundingClientRect().width;
-let tinggiSpan = spanImage[i].offsetHeight;
-let paddingX = (lebarImage/2) - (lebarSpan/2);
-let paddingY = (tinggiImage/2) - (tinggiSpan/2);
+let lebarSpan = firstSpan.getBoundingClientRect().width;
+let tinggiSpan = firstSpan.offsetHeight;
+let paddingLR = (lebarImage/2) - (lebarSpan/2);
+let paddingX = parseFloat(paddingLR);
+let paddingTB = (tinggiImage/2) - (tinggiSpan/2);
+let paddingY = parseFloat(paddingTB);
 
-spanImage[i].style.paddingLeft = paddingX + 'px';
-spanImage[i].style.paddingRight = paddingX + 'px';
-spanImage[i].style.paddingTop = paddingY + 'px';
-spanImage[i].style.paddingBottom = paddingY + 'px';
-spanImage[i].style.transform = 'translateX' + '(' + '-' + lebarImage + 'px'+')';
-}
+for (let i = 0; i < spanImage.length; i++) {
+    spanImage[i].style.transform = 'translateX'+'('+'-'+lebarImage+'px'+')';
+};
+
+for (let i = 0; i < spanImage.length; i++) {
+    spanImage[i].style.padding = paddingY + 'px ' + paddingX + 'px';
+};
 
 
-window.addEventListener('resize', function(){
-    for (let i = 0; i < spanImage.length; i++) {
-        let lebarImage = imageThumb.getBoundingClientRect().width;
-        let tinggiImage = imageThumb.offsetHeight;
-        let lebarSpan = spanImage[i].getBoundingClientRect().width;
-        let tinggiSpan = spanImage[i].offsetHeight;
-        let paddingX = (lebarImage/2) - (lebarSpan/2);
-        let paddingY = (tinggiImage/2) - (tinggiSpan/2);
-        
-        spanImage[i].style.paddingLeft = paddingX + 'px';
-        spanImage[i].style.paddingRight = paddingX + 'px';
-        spanImage[i].style.paddingTop = paddingY + 'px';
-        spanImage[i].style.paddingBottom = paddingY + 'px';
-        spanImage[i].style.transform = 'translateX' + '(' + '-' + lebarImage + 'px'+')';
-        };
-// spanImage.forEach(element => {
-//     element.style.paddingLeft = paddingX +'px';
-//     element.style.paddingRight = paddingX +'px';
-//     element.style.paddingTop = paddingY +'px';
-//     element.style.paddingBottom = paddingY +'px';
-//     element.style.transform = 'translateX'+'('+'-'+lebarImage+'px'+')';
-// });
 
+window.addEventListener('resize', function () {
+    var i = 0;
+    while (i < 1) {
+        setTimeout("location.reload(true);",500);
+        i++;
+    };
+    
 });
