@@ -605,6 +605,7 @@ a.button.has-icon {
 
 /* FOOTER */
 footer {
+    overflow: hidden;
     width: 100%;
     background-color: #111;
     color: #fff;
