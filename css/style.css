@@ -181,9 +181,9 @@ body {
 
 /* menu/navbar */
 
-.scrol-fix {
+/* .scrol-fix {
     overflow: auto;
-}
+} */
 
 .menu {
     font-family: 'Oswald', sans-serif;
@@ -608,7 +608,7 @@ footer {
     width: 100%;
     background-color: #111;
     color: #fff;
-    
+
 }
 
 .footer-content {
