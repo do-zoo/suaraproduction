@@ -172,7 +172,9 @@ body {
     font-family: 'Poppins', sans-serif;
     -webkit-text-decoration-color: var(--text-color);
     text-decoration-color: var(--text-color);
+
 }
+
 
 html,
 body {
@@ -212,6 +214,10 @@ body {
 .brand {
     grid-area: brand;
     margin-left: 45px;
+}
+
+.brand-mobile {
+    display: none;
 }
 
 div.brand a img {
@@ -422,7 +428,6 @@ a.button.has-icon {
     background-position-x: 70%;
     background-repeat: no-repeat;
     visibility: inherit;
-    overflow-y: scroll;
 }
 
 .layanan .border {
@@ -861,6 +866,43 @@ footer {
 
     .social {
         display: none;
+    }
+
+    label#toggle-menu {
+        top: 0;
+        right: 0;
+        font-size: 30px;
+        line-height: 60px;
+        float: right;
+        cursor: pointer;
+        margin-right: 30px;
+        display: inline-block;
+        position: absolute;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .brand-mobile {
+        width: 100%;
+        display: inline-block;
+        top: 0;
+    }
+
+    .brand-mobile a {
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+        top: 0;
+    }
+
+
+
+    .brand-mobile a img {
+        position: relative;
+        max-height: 50px;
+        top: 5px;
     }
 
     .hero h1 {
