@@ -162,9 +162,9 @@ table {
 
 /* my-css */
 
-img {
+/* img {
     width: 100%;
-}
+} */
 
 body {
     background-color: var(--bacground-color);
@@ -202,7 +202,7 @@ body {
     opacity: 0.95;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
     filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-    gap: 20px;
+    gap: 30px;
     overflow: hidden;
 
     z-index: 1000;
@@ -211,12 +211,13 @@ body {
 
 .brand {
     grid-area: brand;
-    margin-left: 0px;
+    margin-left: 45px;
 }
 
 div.brand a img {
-    max-width: 120px;
-    max-height: 60px;
+
+    /* max-width: 120px; */
+    max-height: 50px;
 }
 
 .navbar {
@@ -295,14 +296,18 @@ header:after {
     justify-content: center;
     align-items: center;
     vertical-align: middle;
-    background-image: url(../img/background/INGET-GUE-WALPAPER.jpg);
+    background-image: url(../img/background/WALLPAPPER-Header.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     visibility: inherit;
 }
 
-.hero h1 {
+.hero img {
+    width: 100%;
+}
+
+/* .hero h1 {
     font-family: var(--font-family-kecil);
     font-weight: 700;
     text-transform: uppercase;
@@ -316,7 +321,7 @@ header:after {
     font-size: 5rem;
     color: #fff;
     padding: 0 10%;
-}
+} */
 
 
 .shadow {
@@ -541,6 +546,9 @@ a.button.has-icon {
     box-sizing: border-box;
 }
 
+.image-hover a img {
+    width: 100%;
+}
 
 .image-hover a span {
     position: absolute;
@@ -587,7 +595,9 @@ a.button.has-icon {
     margin: 50px auto;
 }
 
-
+.client-thumb img {
+    width: 100%;
+}
 
 .client-content {
     display: grid;
@@ -621,6 +631,10 @@ a.button.has-icon {
     cursor: pointer;
 }
 
+.image-location img {
+    width: 100%;
+}
+
 .medium-maps {
     display: none;
 }
@@ -643,6 +657,11 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 50px 30px;
+}
+
+
+.footer-brand img {
+    width: 100%;
 }
 
 .footer-brand span {
@@ -784,7 +803,8 @@ footer {
 
     .brand {
         position: fixed;
-        margin-left: 0px;
+        margin: auto 30px;
+        top: 5px;
     }
 
     .navbar ul.show {
