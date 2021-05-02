@@ -426,11 +426,8 @@ a.button.has-icon {
 }
 
 .layanan .border {
-    width: 0%;
-    max-width: 20%;
-    height: 2px;
     background-color: #fff;
-    margin: 20px auto;
+
 }
 
 .layanan-bar {
