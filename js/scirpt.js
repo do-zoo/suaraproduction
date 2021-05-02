@@ -8,6 +8,7 @@ const scrollFixMenu = document.querySelector('div.menu');
             hideAfterClick.forEach(element => {
                 element.addEventListener('click', function(){
                     showMenu.classList.remove('show');
+                    document.body.classList.remove('lock-scroll');
                 });
             });
             document.body.classList.toggle('lock-scroll');
