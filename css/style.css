@@ -361,7 +361,7 @@ header:after {
 
 
 .description {
-    padding: 100px 50px 150px;
+    padding: 100px 50px 100px;
 }
 
 .description h1 {
@@ -382,7 +382,6 @@ header:after {
 .description p {
     font-size: var(--font-size-p);
     line-height: 2em;
-    padding: 0 0 20px;
 }
 
 .button-align {
