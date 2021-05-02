@@ -6,7 +6,9 @@ const scrollFixMenu = document.querySelector('div.menu');
         selectMenu.addEventListener('click', function () {
             showMenu.classList.toggle('show');
             hideAfterClick.forEach(element => {
-                element.classList.toggle('show');
+                element.addEventListener('click', function(){
+                    showMenu.classList.remove('show');
+                });
             });
             document.body.classList.toggle('lock-scroll');
             scrollFixMenu.classList.toggle('scrol-fix');
