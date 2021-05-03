@@ -466,6 +466,7 @@ a.button.has-icon {
     margin: 20px auto;
 }
 
+
 .product-bar {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -486,7 +487,7 @@ a.button.has-icon {
 }
 
 .layanan-content h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 
