@@ -16,31 +16,31 @@ const scrollFixMenu = document.querySelector('div.menu');
         });
 
 //thumbnail image 
-const imageThumb = document.querySelector('.image-thumb');
-const firstSpan = document.querySelector('.image-hover a span.first-span');
-const spanImage = document.querySelectorAll('.image-hover a span');
+// const imageThumb = document.querySelector('.image-thumb');
+// const firstSpan = document.querySelector('.image-hover a span.first-span');
+// const spanImage = document.querySelectorAll('.image-hover a span');
 
 
 
 
 
 
-let lebarImage = imageThumb.getBoundingClientRect().width;
-let tinggiImage = imageThumb.offsetHeight;
-let lebarSpan = firstSpan.getBoundingClientRect().width;
-let tinggiSpan = firstSpan.offsetHeight;
-let paddingLR = (lebarImage/2) - (lebarSpan/2);
-let paddingX = parseFloat(paddingLR);
-let paddingTB = (tinggiImage/2) - (tinggiSpan/2);
-let paddingY = parseFloat(paddingTB);
+// let lebarImage = imageThumb.getBoundingClientRect().width;
+// let tinggiImage = imageThumb.offsetHeight;
+// let lebarSpan = firstSpan.getBoundingClientRect().width;
+// let tinggiSpan = firstSpan.offsetHeight;
+// let paddingLR = (lebarImage/2) - (lebarSpan/2);
+// let paddingX = parseFloat(paddingLR);
+// let paddingTB = (tinggiImage/2) - (tinggiSpan/2);
+// let paddingY = parseFloat(paddingTB);
 
-for (let i = 0; i < spanImage.length; i++) {
-    spanImage[i].style.transform = 'translateX'+'('+'-'+lebarImage+'px'+')';
-};
+// for (let i = 0; i < spanImage.length; i++) {
+//     spanImage[i].style.transform = 'translateX'+'('+'-'+lebarImage+'px'+')';
+// };
 
-for (let i = 0; i < spanImage.length; i++) {
-    spanImage[i].style.padding = paddingY + 'px ' + paddingX + 'px';
-};
+// for (let i = 0; i < spanImage.length; i++) {
+//     spanImage[i].style.padding = paddingY + 'px ' + paddingX + 'px';
+// };
 
 
 
