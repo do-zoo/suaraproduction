@@ -466,7 +466,6 @@ a.button.has-icon {
     margin: 20px auto;
 }
 
-
 .product-bar {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -486,7 +485,7 @@ a.button.has-icon {
 }
 
 .layanan-content h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -557,13 +556,13 @@ a.button.has-icon {
 .image-hover a img:hover {
     transform: scale(1.5);
 }
+
 /* .image-hover a span {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: opacity 0.5s;
 }
-
 .image-hover a span p {
     color: rgba(255, 255, 255, 1);
     padding: 0;
