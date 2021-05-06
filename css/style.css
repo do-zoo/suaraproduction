@@ -781,7 +781,7 @@ footer {
         line-height: 60px;
         float: right;
         cursor: pointer;
-        margin-right: 30px;
+        margin-right: 3px;
         display: inline;
     }
 
@@ -879,7 +879,7 @@ footer {
         font-size: 30px;
         line-height: 60px;
         cursor: pointer;
-        margin-right: 30px;
+        margin-right: 10px;
         display: inline-block;
         position: absolute;
     }
