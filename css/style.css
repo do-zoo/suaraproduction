@@ -602,8 +602,12 @@ a.button.has-icon {
     margin: 50px auto;
 }
 
+.client-thumb {
+    width: 50%;
+}
+
 .client-thumb img {
-    width: 100%;
+    width: fit-content;
 }
 
 .client-content {
