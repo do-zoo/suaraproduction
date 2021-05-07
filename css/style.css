@@ -920,6 +920,13 @@ footer {
         width: 80%;
     }
 
+    .location {
+        margin: auto 15px 100px;
+    }
+
+    .map-responsive {
+        height: 300px;
+    }
 
     .footer-content {
         grid-template-columns: repeat(1, 1fr);
