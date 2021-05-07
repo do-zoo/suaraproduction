@@ -599,22 +599,29 @@ a.button.has-icon {
 
 .client-brand {
     background-color: #fff;
-    margin: 50px auto;
+    margin: 50px auto 0;
+}
+
+.client-content {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    justify-content: space-between;
 }
 
 .client-thumb {
     width: 50%;
+    text-align: center;
 }
 
 .client-thumb img {
-    width: fit-content;
+    max-height: 60%;
 }
 
-.client-content {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin: auto 50px;
-}
 
 .client-thumb {
     cursor: pointer;
@@ -624,34 +631,26 @@ a.button.has-icon {
 /* LOCATION */
 
 .location {
-    margin: 120px 50px;
+    margin: auto 50px 100px;
 }
 
 .location .description {
     margin-bottom: -100px;
 }
 
-.location-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    gap: 30px;
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
 
-.image-location {
-    cursor: pointer;
-}
-
-.image-location img {
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
     width: 100%;
-}
-
-.medium-maps {
-    display: none;
-}
-
-.small-maps {
-    display: none;
+    position: absolute;
 }
 
 /* FOOTER */
@@ -747,18 +746,6 @@ footer {
         width: 30%;
         padding: 15px;
     }
-
-    .large-maps {
-        display: none;
-    }
-
-    .medium-maps {
-        display: inline-block;
-    }
-
-    .small-maps {
-        display: none;
-    }
 }
 
 
@@ -851,18 +838,6 @@ footer {
     .client-content {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    .large-maps {
-        display: none;
-    }
-
-    .medium-maps {
-        display: none;
-    }
-
-    .small-maps {
-        display: inline-block;
-    }
 }
 
 
@@ -949,21 +924,5 @@ footer {
     .copyright {
         line-height: 2.5rem;
         font-size: 12px;
-    }
-
-    .location {
-        margin: 120px auto;
-    }
-
-    .location-container {
-        display: inline-block;
-    }
-
-    .location .description {
-        margin-bottom: -120px;
-    }
-
-    .image-location {
-        display: none;
     }
 }
