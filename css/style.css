@@ -624,6 +624,7 @@ a.button.has-icon {
 }
 
 
+
 /* LOCATION */
 
 .location {
@@ -832,11 +833,11 @@ footer {
     }
 
     .client-content {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     }
 
     .client-thumb img {
-        width: 60%;
+        width: 70%;
     }
 
 }
@@ -918,6 +919,10 @@ footer {
 
     .client-thumb img {
         width: 80%;
+    }
+
+    .item-remove {
+        display: none;
     }
 
     .location {
