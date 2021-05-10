@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@300;400;600;700&display=swap');
 
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -11,9 +19,10 @@
     --text-color: #000;
     --bacground-color: rgb(255, 253, 253);
     --font-size-p: 1em;
-    --font-size-h1: 2.8em;
+    --font-size-h1: 2.2em;
     --font-size-button: 20px;
     --font-family-kecil: 'Poppins', sans-serif;
+    --size-font-judul: 2.5rem;
 }
 
 html[data-screen-mode='dark'] {
@@ -199,6 +208,8 @@ body {
     grid-template-areas:
         "brand navbar social";
     -ms-grid-row-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.95);
     opacity: 0.95;
@@ -212,6 +223,8 @@ body {
 }
 
 .brand {
+    grid-row: 1;
+    grid-column: 1;
     grid-area: brand;
     margin-left: 45px;
 }
@@ -227,6 +240,8 @@ div.brand a img {
 }
 
 .navbar {
+    grid-row: 1;
+    grid-column: 3;
     grid-area: navbar;
 }
 
@@ -251,14 +266,19 @@ nav.navbar ul li a.active,
 nav.navbar ul li a:hover {
     color: #FFA500;
     -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .social {
+    grid-row: 1;
+    grid-column: 5;
     grid-area: social;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -278,20 +298,57 @@ label#toggle-menu {
 
 
 /* CONTENT */
-.big-container {
-    width: 100%;
-    position: relative;
-    font-family: var(--font-family-kecil);
-    text-align: center;
+h1 {
+    text-transform: uppercase;
+}
+
+
+.border {
+    margin: 10px 0;
+    max-width: 10%;
+    height: 3px;
+    background-color: #fff;
 }
 
 .content {
+    width: 100%;
+    position: relative;
+    text-align: center;
     background-color: #fefefe;
 }
 
+.page-title {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 275px;
+    background-image: url(../img/background/head-background.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-position-x: center;
+    background-attachment: fixed;
+    visibility: inherit;
+    top: 0;
+    padding: 150px 50px 0;
+}
+
+.title {
+    padding-top: 50px;
+}
+
+
+.title h1 {
+    font-size: var(--size-font-judul);
+    color: #fff;
+    font-weight: 600;
+}
+
+/* description */
 
 .description {
-    padding: 100px 50px 100px;
+    font-family: var(--font-family-kecil);
+    padding: 50px 50px 100px;
 }
 
 .description h1 {
@@ -301,62 +358,40 @@ label#toggle-menu {
     margin: 0 auto;
 }
 
-.border {
-    /* width: 0%; */
-    max-width: 20%;
-    height: 2px;
+.description .border {
+    margin: 10px auto;
+    max-width: 10%;
+    height: 3px;
     background-color: #000;
-    margin: 20px auto;
 }
+
+
 
 .description p {
     font-size: var(--font-size-p);
     line-height: 2em;
+    text-align: left;
+    display: inline-block;
 }
 
-.button-align {
-    width: 25%;
-    background-color: black;
-    padding: 15px;
-    border-radius: 8px;
-    margin: auto;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-
-
-
-.button-align:hover {
-    background-color: #666;
-    border-radius: 5px;
-}
-
-a.button.has-icon {
-    font-weight: 400;
-    font-size: var(--font-size-button);
-    color: white;
-    text-decoration: none;
-}
-
-.icon-arrow-right {
-    position: relative;
-    float: left;
-    margin: 0 15px 0 0;
+.description ul {
+    text-align: start;
+    font-size: var(--font-size-p);
+    line-height: 2em;
+    list-style: disc;
+    padding-left: 16px;
 }
 
 
-/* content*/
-.page-title {
-    width: 100%;
-    height: 40vh;
-    background-image: url(../img/background/head-background.JPG);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -50px;
-    background-position-x: center;
-    background-attachment: fixed;
-    visibility: inherit;
+
+.services {
+    padding: 50px;
 }
+
+
+
+
+
 
 
 /* FOOTER */
@@ -369,7 +404,9 @@ footer {
 }
 
 .footer-content {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 50px 30px;
@@ -432,8 +469,9 @@ footer {
 @media (max-width: 1240px) {
     :root {
         --font-size-p: 0.938em;
-        --font-size-h1: 2.4em;
+        --font-size-h1: 2em;
         --font-size-button: 18px;
+        --size-font-judul: 2.2rem;
     }
 
     .navbar ul.navbar-list {
@@ -451,6 +489,7 @@ footer {
         --font-size-p: 0.875em;
         --font-size-h1: 2em;
         --font-size-button: 16px;
+        --size-font-judul: 2.2rem;
     }
 
     .menu {
@@ -492,6 +531,7 @@ footer {
         top: 60px;
         left: -100%;
         -webkit-transition: all .5s;
+        -o-transition: all .5s;
         transition: all .5s;
         gap: 0;
     }
@@ -509,6 +549,16 @@ footer {
     .lock-scroll {
         overflow: hidden;
     }
+
+    .page-title {
+        height: 200px;
+        padding: 100px 50px 0;
+    }
+
+    .title {
+        /* margin-top: -50px; */
+        padding-top: 0px;
+    }
 }
 
 
@@ -517,6 +567,7 @@ footer {
         --font-size-p: 12px;
         --font-size-h1: 1.6em;
         --font-size-button: 14px;
+        --size-font-judul: 1.6rem;
     }
 
     .social {
@@ -560,6 +611,7 @@ footer {
     }
 
     .footer-content {
+        -ms-grid-columns: 1fr;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
         padding: 50px 30px;
