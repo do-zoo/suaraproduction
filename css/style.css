@@ -132,7 +132,6 @@ body {
     filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
     gap: 30px;
     overflow: hidden;
-
     z-index: 1000;
 
 }
@@ -751,8 +750,11 @@ footer {
         align-items: center;
         top: 60px;
         left: -100%;
-        -webkit-transition: all .5s;
-        transition: all .5s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        -ms-transition: all 1s;
+        transition: all 1s;
         gap: 0;
         padding: 0;
         margin: 0;
