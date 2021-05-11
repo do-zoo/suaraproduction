@@ -1,9 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@300;400;600;700&display=swap');
-
-
-* {
+/* Box sizing rules */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@300;400;600;700&display=swap');
 
 
 /* screen mode css */
@@ -20,151 +91,6 @@ html[data-screen-mode='dark'] {
     --text-color: #fff;
     --bacground-color: #333;
 }
-
-
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-    padding-bottom: 1000px;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* my-css */
-
-/* img {
-    width: 100%;
-} */
 
 body {
     background-color: var(--bacground-color);
@@ -221,8 +147,6 @@ body {
 }
 
 div.brand a img {
-
-    /* max-width: 120px; */
     max-height: 50px;
 }
 
@@ -238,6 +162,7 @@ div.brand a img {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 50px;
+    padding: 0;
 }
 
 nav.navbar ul li a {
@@ -304,9 +229,8 @@ header:after {
     align-items: center;
     vertical-align: middle;
     background-image: url(../img/background/WALLPAPPER-Header.jpg);
-    background-size: contain;
-    background-position-x: center;
-    background-position-y: -200px;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     visibility: inherit;
 }
@@ -314,22 +238,6 @@ header:after {
 .hero img {
     width: 100%;
 }
-
-/* .hero h1 {
-    font-family: var(--font-family-kecil);
-    font-weight: 700;
-    text-transform: uppercase;
-    left: 0;
-    position: absolute;
-    z-index: 30;
-    line-height: 5rem;
-    top: calc(40% - 2rem);
-    width: 100%;
-    text-align: center;
-    font-size: 5rem;
-    color: #fff;
-    padding: 0 10%;
-} */
 
 
 .shadow {
@@ -341,12 +249,6 @@ header:after {
     z-index: 20;
     background: linear-gradient(to top, #363636, transparent);
 }
-
-/* 
-.opacity {
-    opacity: 0;
-} */
-
 
 
 /* CONTENT */
@@ -394,6 +296,7 @@ header:after {
     margin: auto;
     -webkit-transition: .5s;
     transition: .5s;
+    line-height: 1;
 }
 
 
@@ -484,6 +387,7 @@ a.button.has-icon {
     margin-bottom: 10px;
     display: inline-block;
     border-radius: 50%;
+    line-height: 1;
 }
 
 .layanan-content h4 {
@@ -499,6 +403,7 @@ a.button.has-icon {
     margin-bottom: 10px;
     display: inline-block;
     border-radius: 50%;
+    line-height: 1;
 }
 
 .layanan-content h4 {
@@ -521,18 +426,9 @@ a.button.has-icon {
 }
 
 /* portfolio */
-.portfolio-bar {
-    padding-bottom: 30px;
-}
-
-.portfolio .description {
-    padding-bottom: 30px;
-}
-
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(4, minmax(225px, 1fr));
-    margin-bottom: 50px;
+    grid-template-columns: repeat(3, minmax(225px, 1fr));
 }
 
 .image-hover {
@@ -542,55 +438,29 @@ a.button.has-icon {
     overflow: hidden;
 }
 
-.image-hover a {
-    text-decoration: none;
-    overflow: hidden;
-    margin: auto;
-    box-sizing: border-box;
-}
-
 .image-hover a img {
+    filter: grayscale(100%);
     width: 100%;
-    transition: transform 0.5s;
+    -moz-transition: transform 0.75s ease-in-out, filter 0.75s ease-in-out;
+    -webkit-transition: transform 0.75s ease-in-out, filter 0.75s ease-in-out;
+    -o-transition: transform 0.75s ease-in-out, filter 0.75s ease-in-out;
+    -ms-transition: transform 0.75s ease-in-out, filter 0.75s ease-in-out;
+    transition: transform 0.75s ease-in-out, filter 0.75s ease-in-out;
 }
 
 
 .image-hover a img:hover {
+    filter: grayscale(0%);
     transform: scale(1.5);
 }
 
-/* .image-hover a span {
+
+/* .icon-play {
+    font-size: 3rem;
+    color: #fff;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-.image-hover a span p {
-    color: rgba(255, 255, 255, 1);
-    padding: 0;
-    margin: 0;
+    line-height: 0;
 } */
-
-
-
-/* .image-hover a span:hover {
-    opacity: 1;
-} */
-
-
-.portfolio-thumb {
-    margin: 20px 0;
-}
-
-.portfolio-thumb>* {
-    margin: 0 0 15px;
-}
-
-.portfolio-thumb h4 {
-    font-size: 20px;
-    font-weight: 600;
-}
-
 
 /* Client */
 
@@ -616,6 +486,7 @@ a.button.has-icon {
 
 
 .client-thumb img {
+    margin: auto;
     width: 50%;
 }
 
@@ -765,12 +636,12 @@ footer {
     }
 
     label#toggle-menu {
-        margin: 0 50px;
+        margin: auto 30px auto 20px;
         font-size: 30px;
         line-height: 60px;
         float: right;
         cursor: pointer;
-        margin-right: 3px;
+        /* margin-right: 3px; */
         display: inline;
     }
 
@@ -795,6 +666,8 @@ footer {
         -webkit-transition: all .5s;
         transition: all .5s;
         gap: 0;
+        padding: 0;
+        margin: 0;
     }
 
     .brand {
@@ -876,19 +749,13 @@ footer {
         top: 0;
     }
 
-    .brand-mobile a {
-        text-align: center;
-        width: 100%;
-        display: inline-block;
-        top: 0;
-    }
-
 
 
     .brand-mobile a img {
         position: relative;
         max-height: 50px;
         top: 5px;
+        margin: auto;
     }
 
     .hero h1 {

@@ -15,24 +15,15 @@ const scrollFixMenu = document.querySelector('div.menu');
             scrollFixMenu.classList.toggle('scrol-fix');
         });
 
-//thumbnail image 
+
+
+// thumbnail image 
 // const imageThumb = document.querySelector('.image-thumb');
-// const firstSpan = document.querySelector('.image-hover a span.first-span');
-// const spanImage = document.querySelectorAll('.image-hover a span');
+// const iconPlay = document.querySelector('.icon-play');
+// const iconPlayIcon = document.querySelector('.icon-play i');
 
+// window.addEventListener('resize', iconPadding);
 
-
-
-
-
-// let lebarImage = imageThumb.getBoundingClientRect().width;
-// let tinggiImage = imageThumb.offsetHeight;
-// let lebarSpan = firstSpan.getBoundingClientRect().width;
-// let tinggiSpan = firstSpan.offsetHeight;
-// let paddingLR = (lebarImage/2) - (lebarSpan/2);
-// let paddingX = parseFloat(paddingLR);
-// let paddingTB = (tinggiImage/2) - (tinggiSpan/2);
-// let paddingY = parseFloat(paddingTB);
 
 // for (let i = 0; i < spanImage.length; i++) {
 //     spanImage[i].style.transform = 'translateX'+'('+'-'+lebarImage+'px'+')';
@@ -41,14 +32,28 @@ const scrollFixMenu = document.querySelector('div.menu');
 // for (let i = 0; i < spanImage.length; i++) {
 //     spanImage[i].style.padding = paddingY + 'px ' + paddingX + 'px';
 // };
+    // let lebarImage = imageThumb.getBoundingClientRect().width;
+    // let tinggiImage = imageThumb.getBoundingClientRect().height;
+    // let tinggiImage = imageThumb.offsetHeight;
+
+    // let lebarIcon = iconPlay.getBoundingClientRect().width;
+    // let tinggiIcon = iconPlay.getBoundingClientRect().height;
+    // let tinggiSpan = firstSpan.offsetHeight;
+    // let paddingX = (lebarImage/2) - (lebarIcon/2);
+    // let paddingX = parseFloat(paddingLR);
+    // let paddingY = (tinggiImage/2) - (tinggiIcon/2);
+    // let paddingY = parseFloat(paddingTB);
+    // iconPlayIcon.style.padding = paddingY + 'px ' + paddingX + 'px';
 
 
 
 // window.addEventListener('resize', function () {
-//     var i = 0;
-//     while (i < 1) {
-//         setTimeout("location.reload(true);",500);
-//         i++;
-//     };
+//     iconPlayIcon.style.padding = paddingY + 'px ' + paddingX + 'px';
+    // var i = 0;
+    // while (i < 1) {
+    //     setTimeout("location.reload(true);",500);
+    //     i++;
+    // };
     
 // });
+

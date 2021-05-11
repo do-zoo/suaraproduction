@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Suara Production, Video editing, Video Production, Audio editing, audio, video, wedding organizer, WO, Video Editing Tangerang Selatan, banten, house Production">
+    <meta name="description" content="Suara Production is a full service video and audio production located in Tangerang Selatan, Indonesia. Suara Production is the leading production services company for Videography, Editing, Casting, Audio Post Production, and many more.">
+    <link rel="icon" sizes="512x512" href="img/icon-suara-production-512.png" type="image/png">
+    <title>Suara Production - Inget Gue</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://www.suaraproduction.com/",
+          "logo": "https://www.suaraproduction.com/img/logo/my-logo/LOGO-SUARA-PRODUCTION-HITAM.png"
+        }
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DMLESTLEYR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DMLESTLEYR');
+</script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="brand">
+                <a href="" target="_blank" title="Suara Production">
+                    <img src="img/LOGO-SUARA-PRODUCTION-BULETAN-HITAM.png" alt="logo">
+                </a>
+            </div>
+            <div class="brand-mobile">
+                <a href="" target="_blank" title="Suara Production">
+                    <div class="image-brand-container">
+                        <img src="img/LOGO-SUARA-PRODUCTION-HITAM.png" alt="logo">
+                    </div>
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li><a class="active" href="#">HOME</a></li>
+                    <li><a href="#">OUR SERVICES</a></li>
+                    <li><a href="#">OUR CLIENT</a></li>
+                    <!-- <li><a href="#">OUR STORIES</a></li> -->
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+            <label id="toggle-menu">
+                <i class="bi bi-list"></i>
+            </label>
+            <div class="social">
+                <!-- <a href="https://www.instagram.com/suaraproduction/" target="_blank" class="social-item facebook"><i
+                        class="bi bi-facebook" style="font-size: 1.5rem;"></i></a> -->
+                <a href="https://api.whatsapp.com/send?phone=6281318423962" target="_blank" class="social-item twitter"><i
+                        class="bi bi-whatsapp" style="font-size: 1.5rem;"></i></a>
+                <a href="https://www.youtube.com/channel/UC-jW62zINDEiHi0qfTS4RPQ" target="_blank"
+                    class="social-item youtube"><i class="bi bi-youtube" style="font-size: 1.5rem;"></i></a>
+                <a href="https://www.instagram.com/suaraproduction/" target="_blank" class="social-item instagram"><i
+                        class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+            </div>
+        </div>
+        <div class="header-1">
+            <div class="hero hero-1">
+                
+                <h1 class="oops">OOPS!</h1>
+                <h1 class="maintenance-text">THIS WEBSITE UNDER MAINTENANCE</h1>
+                <div class="countdown">
+                    <div class="count-content">
+                        <div class="count count-days">
+                            <h1>DAYS</h1>
+                            <p id="time-days">0</p>
+                        </div>
+                        <div class="count count-hours">
+                            <h1>HOURS</h1>
+                            <p id="time-hours">0</p>
+                        </div>
+                        <div class="count count-minutes">
+                            <h1>MINUTES</h1>
+                            <p id="time-minutes">0</p>
+                        </div>
+                        <div class="count count-second">
+                            <h1>SECONDS</h1>
+                            <p id="time-seconds">0</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/web-image@2x.png" class="image-header translate" data-speed="0.1">
+            </div>
+        </div>
+    </header>
+
+    <script>
+
+// toogle menu
+const selectMenu = document.getElementById('toggle-menu');
+const showMenu = document.querySelector('.navbar ul');
+const hideAfterClick = document.querySelectorAll('.navbar ul li');
+const scrollFixMenu = document.querySelector('div.menu');
+        selectMenu.addEventListener('click', function () {
+            showMenu.classList.toggle('show');
+            hideAfterClick.forEach(element => {
+                element.addEventListener('click', function(){
+                    showMenu.classList.remove('show');
+                    document.body.classList.remove('lock-scroll');
+                });
+            });
+            document.body.classList.toggle('lock-scroll');
+            scrollFixMenu.classList.toggle('scrol-fix');
+        });
+        // Set the date we're counting down to
+var countDownDate = new Date("may 12, 2021 03:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("time-days").innerHTML = days;
+    document.getElementById("time-hours").innerHTML = hours;
+    document.getElementById("time-minutes").innerHTML = minutes;
+    document.getElementById("time-seconds").innerHTML = seconds;
+
+
+
+    // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    // + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    // if (distance < 0) {
+    //     clearInterval(x);
+    //     document.getElementById("demo").innerHTML = "EXPIRED";
+    // }
+}, 1000);
+    </script>
+</body>
+</html>
