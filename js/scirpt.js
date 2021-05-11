@@ -64,15 +64,61 @@ const youtubeLightbox = document.querySelector('.youtube-lightbox');
 const closeButton = document.querySelector('.close-button');
 const containerLightbox = document.querySelector("div.overlay-youtube");
 const portThumb = document.querySelectorAll(".image-hover");
+const iFrameYt = document.querySelector('.slider-responsive iframe');
+const previewsButton = document.querySelector('.previews-button');
+const nextButton = document.querySelector('.next-button');
+
+let linkYt = ["https://www.youtube.com/embed/oaeZF63W2UE", "https://www.youtube.com/embed/abKSS_JerPM", "https://www.youtube.com/embed/NR40jM4qn8s", "https://www.youtube.com/embed/KPVzb68hLTg", "https://www.youtube.com/embed/VG70Nr-hYW0", "https://www.youtube.com/embed/cmIuepNT8Es"];
 
 
+for (let i = 0; i < portThumb.length; i++) {
+    portThumb[i].addEventListener('click', function(){
+        containerLightbox.classList.toggle('close-youtube');
+        iFrameYt.setAttribute("src", linkYt[i]);
+        if (i == 0) {
+            previewsButton.classList.add('hide-navigation');
+        }
+        if (i == portThumb.length) {
+            nextButton.classList.add('hide-navigation');
+        }
+        // Previews button
+        previewsButton.addEventListener('click', function(){
+            i--;
+            iFrameYt.setAttribute("src", linkYt[i]);
+            if (i == 0) {
+                previewsButton.classList.add('hide-navigation');
+            } else {
+                nextButton.classList.remove('hide-navigation');
+            }
+        });
+        
 
-portThumb[0].addEventListener('click', function(){
-    containerLightbox.classList.toggle('close-youtube');
-});
+        //next button
+        nextButton.addEventListener('click', function(){
+            i++;
+            iFrameYt.setAttribute("src", linkYt[i]);
+            if (i == portThumb.length) {
+                nextButton.classList.add('hide-navigation');
+            } else {
+                previewsButton.classList.remove('hide-navigation');
+            }            
+        });
+    });
+}
+
 
 
 closeButton.addEventListener('click', function(){
     containerLightbox.classList.toggle('close-youtube');
+    iFrameYt.removeAttribute("src");
 }
 );
+
+
+
+
+
+
+
+
+

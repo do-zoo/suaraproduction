@@ -460,6 +460,10 @@ a.button.has-icon {
     display: none;
 }
 
+.hide-navigation {
+    display: none;
+}
+
 .youtube-lightbox {
     top: 0;
     z-index: 9999;
