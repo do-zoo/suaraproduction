@@ -68,7 +68,7 @@ const iFrameYt = document.querySelector('.slider-responsive iframe');
 const previewsButton = document.querySelector('.previews-button');
 const nextButton = document.querySelector('.next-button');
 
-let linkYt = ["https://www.youtube.com/embed/oaeZF63W2UE", "https://www.youtube.com/embed/abKSS_JerPM", "https://www.youtube.com/embed/NR40jM4qn8s", "https://www.youtube.com/embed/KPVzb68hLTg", "https://www.youtube.com/embed/VG70Nr-hYW0","https://www.youtube.com/embed/2BcVOKlSPXw", "https://www.youtube.com/embed/O5LWTjrV2X0", "https://www.youtube.com/embed/xgByZdZDMws", "https://www.youtube.com/embed/cXLdBBSF-wo"];
+let linkYt = ["https://www.youtube.com/embed/oaeZF63W2UE", "https://www.youtube.com/embed/KPVzb68hLTg", "https://www.youtube.com/embed/abKSS_JerPM", "https://www.youtube.com/embed/2BcVOKlSPXw", "https://www.youtube.com/embed/xgByZdZDMws", "https://www.youtube.com/embed/VG70Nr-hYW0", "https://www.youtube.com/embed/cXLdBBSF-wo", "https://www.youtube.com/embed/O5LWTjrV2X0", "https://www.youtube.com/embed/NR40jM4qn8s"];
 
 
 for (let i = 0; i < portThumb.length; i++) {
