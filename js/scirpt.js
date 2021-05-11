@@ -57,3 +57,22 @@ const scrollFixMenu = document.querySelector('div.menu');
     
 // });
 
+
+
+// SHOWREAL JS
+const youtubeLightbox = document.querySelector('.youtube-lightbox');
+const closeButton = document.querySelector('.close-button');
+const containerLightbox = document.querySelector("div.overlay-youtube");
+const portThumb = document.querySelectorAll(".image-hover");
+
+
+
+portThumb[0].addEventListener('click', function(){
+    containerLightbox.classList.toggle('close-youtube');
+});
+
+
+closeButton.addEventListener('click', function(){
+    containerLightbox.classList.toggle('close-youtube');
+}
+);
