@@ -82,7 +82,7 @@ select {
     --text-color: #000;
     --bacground-color: rgb(255, 253, 253);
     --font-size-p: 1em;
-    --font-size-h1: 2.8em;
+    --font-size-h1: 2.5em;
     --font-size-button: 20px;
     --font-family-kecil: 'Poppins', sans-serif;
 }
@@ -278,7 +278,7 @@ header:after {
 .border {
     /* width: 0%; */
     max-width: 20%;
-    height: 2px;
+    height: 3px;
     background-color: #000;
     margin: 20px auto;
 }
@@ -320,7 +320,7 @@ a.button.has-icon {
 }
 
 .layanan {
-    background-image: url(../img/img7.jpg);
+    background-image: url(../img/background/section2.JPG);
     color: #fff;
     width: 100%;
     height: 100%;
@@ -364,9 +364,8 @@ a.button.has-icon {
 }
 
 .product .border {
-    /* width: 0%; */
     max-width: 20%;
-    height: 2px;
+    height: 3px;
     background-color: #000;
     margin: 20px auto;
 }
@@ -684,7 +683,7 @@ footer {
 @media (max-width: 1240px) {
     :root {
         --font-size-p: 0.938em;
-        --font-size-h1: 2.4em;
+        --font-size-h1: 2.25em;
         --font-size-button: 18px;
     }
 
@@ -710,7 +709,7 @@ footer {
 @media (max-width: 960px) {
     :root {
         --font-size-p: 0.875em;
-        --font-size-h1: 2em;
+        --font-size-h1: 1.8em;
         --font-size-button: 16px;
     }
 
@@ -809,7 +808,7 @@ footer {
 @media (max-width:768px) {
     :root {
         --font-size-p: 12px;
-        --font-size-h1: 1.6em;
+        --font-size-h1: 1.5em;
         --font-size-button: 14px;
     }
 
