@@ -68,18 +68,60 @@ const iFrameYt = document.querySelector('.slider-responsive iframe');
 const previewsButton = document.querySelector('.previews-button');
 const nextButton = document.querySelector('.next-button');
 
-let linkYt = ["https://www.youtube.com/embed/oaeZF63W2UE", "https://www.youtube.com/embed/KPVzb68hLTg", "https://www.youtube.com/embed/abKSS_JerPM", "https://www.youtube.com/embed/2BcVOKlSPXw", "https://www.youtube.com/embed/xgByZdZDMws", "https://www.youtube.com/embed/VG70Nr-hYW0", "https://www.youtube.com/embed/cXLdBBSF-wo", "https://www.youtube.com/embed/O5LWTjrV2X0", "https://www.youtube.com/embed/NR40jM4qn8s"];
+let linkYt = [
+    // SETWAPRES HARI ASI 2020
+    "https://www.youtube.com/embed/oaeZF63W2UE", 
+    // DOVPO MVV II PANDA
+    "https://www.youtube.com/embed/KPVzb68hLTg", 
+    //BANK DBS
+    "https://www.youtube.com/embed/abKSS_JerPM", 
+    //RESEA PROJECT
+    "https://www.youtube.com/embed/2BcVOKlSPXw", 
+    //DITJEN PST KEMENTAN
+    "https://www.youtube.com/embed/xgByZdZDMws", 
+    //MARCEDES-BENZ
+    "https://www.youtube.com/embed/VG70Nr-hYW0", 
+    //MK RECORD
+    "https://www.youtube.com/embed/cXLdBBSF-wo", 
+    //2NY
+    "https://www.youtube.com/embed/O5LWTjrV2X0", 
+    //BAPETEN
+    "https://www.youtube.com/embed/NR40jM4qn8s",
+    //AVRIST
+    "https://www.youtube.com/embed/NijRMQieNnY",
+    //BNI JAVA JAZZ 2019
+    "https://www.youtube.com/embed/IODja-vNzmc",
+    //EYE LEVEL
+    "https://www.youtube.com/embed/7-G8hkzbF40",
+    //JAKARTA FASHION HUB
+    "https://www.youtube.com/embed/hYSZ53nLxaQ",
+    //KIMIA FARMA
+    "https://www.youtube.com/embed/B5-XvvziYh0",
+    //MAX STREAM
+    "https://www.youtube.com/embed/niIdoE5RBkA",
+    // Multistakeholder Forestry Programme Indonesia
+    "https://www.youtube.com/embed/5diEztdAmhY",
+    //PASPAMPRES Short-Movie
+    "https://www.youtube.com/embed/IkejqLyOcFk",
+    //TELIN
+    "https://www.youtube.com/embed/S1mSUW_h9aA"
+];
 
 
-for (let i = 0; i < portThumb.length; i++) {
+for (let i=0; i < portThumb.length; i++) {
     portThumb[i].addEventListener('click', function(){
         containerLightbox.classList.toggle('close-youtube');
         iFrameYt.setAttribute("src", linkYt[i]);
         if (i == 0) {
             previewsButton.classList.add('hide-navigation');
+        } else {
+            previewsButton.classList.remove('hide-navigation');
         }
         if (i+1 >= portThumb.length) {
             nextButton.classList.add('hide-navigation');
+        }
+        else {
+            nextButton.classList.remove('hide-navigation');
         }
         // Previews button
         previewsButton.addEventListener('click', function(){
@@ -104,13 +146,16 @@ for (let i = 0; i < portThumb.length; i++) {
             }            
         });
     });
-}
+};
 
 
 
 closeButton.addEventListener('click', function(){
     containerLightbox.classList.toggle('close-youtube');
     iFrameYt.removeAttribute("src");
+    nextButton.classList.remove('hide-navigation');
+    previewsButton.classList.remove('hide-navigation');
+    i = 0;
 }
 );
 
