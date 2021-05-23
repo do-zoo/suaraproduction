@@ -16,49 +16,6 @@ const scrollFixMenu = document.querySelector('div.menu');
         });
 
 
-
-// thumbnail image 
-// const imageThumb = document.querySelector('.image-thumb');
-// const iconPlay = document.querySelector('.icon-play');
-// const iconPlayIcon = document.querySelector('.icon-play i');
-
-// window.addEventListener('resize', iconPadding);
-
-
-// for (let i = 0; i < spanImage.length; i++) {
-//     spanImage[i].style.transform = 'translateX'+'('+'-'+lebarImage+'px'+')';
-// };
-
-// for (let i = 0; i < spanImage.length; i++) {
-//     spanImage[i].style.padding = paddingY + 'px ' + paddingX + 'px';
-// };
-    // let lebarImage = imageThumb.getBoundingClientRect().width;
-    // let tinggiImage = imageThumb.getBoundingClientRect().height;
-    // let tinggiImage = imageThumb.offsetHeight;
-
-    // let lebarIcon = iconPlay.getBoundingClientRect().width;
-    // let tinggiIcon = iconPlay.getBoundingClientRect().height;
-    // let tinggiSpan = firstSpan.offsetHeight;
-    // let paddingX = (lebarImage/2) - (lebarIcon/2);
-    // let paddingX = parseFloat(paddingLR);
-    // let paddingY = (tinggiImage/2) - (tinggiIcon/2);
-    // let paddingY = parseFloat(paddingTB);
-    // iconPlayIcon.style.padding = paddingY + 'px ' + paddingX + 'px';
-
-
-
-// window.addEventListener('resize', function () {
-//     iconPlayIcon.style.padding = paddingY + 'px ' + paddingX + 'px';
-    // var i = 0;
-    // while (i < 1) {
-    //     setTimeout("location.reload(true);",500);
-    //     i++;
-    // };
-    
-// });
-
-
-
 // SHOWREAL JS
 const youtubeLightbox = document.querySelector('.youtube-lightbox');
 const closeButton = document.querySelector('.close-button');
@@ -69,14 +26,8 @@ const previewsButton = document.querySelector('.previews-button');
 const nextButton = document.querySelector('.next-button');
 
 let linkYt = [
-    // SETWAPRES HARI ASI 2020
-    "https://www.youtube.com/embed/oaeZF63W2UE", 
     // DOVPO MVV II PANDA
     "https://www.youtube.com/embed/KPVzb68hLTg", 
-    //BANK DBS
-    "https://www.youtube.com/embed/abKSS_JerPM", 
-    //RESEA PROJECT
-    "https://www.youtube.com/embed/2BcVOKlSPXw", 
     //DITJEN PST KEMENTAN
     "https://www.youtube.com/embed/xgByZdZDMws", 
     //MARCEDES-BENZ
@@ -93,12 +44,8 @@ let linkYt = [
     "https://www.youtube.com/embed/IODja-vNzmc",
     //EYE LEVEL
     "https://www.youtube.com/embed/7-G8hkzbF40",
-    //JAKARTA FASHION HUB
-    "https://www.youtube.com/embed/hYSZ53nLxaQ",
     //KIMIA FARMA
     "https://www.youtube.com/embed/B5-XvvziYh0",
-    //MAX STREAM
-    "https://www.youtube.com/embed/niIdoE5RBkA",
     // Multistakeholder Forestry Programme Indonesia
     "https://www.youtube.com/embed/5diEztdAmhY",
     //PASPAMPRES Short-Movie
