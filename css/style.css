@@ -820,7 +820,7 @@ footer {
         --font-size-button: 14px;
     }
 
-    .menu {
+    /* .menu {
         overflow:visible;
     }
 
@@ -846,7 +846,7 @@ footer {
         -ms-flex-pack: center;
         justify-content: center;
         color: rgb(26, 26, 26);
-    }
+    } */
 
 
 
