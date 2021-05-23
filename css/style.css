@@ -429,6 +429,12 @@ a.button.has-icon {
     grid-template-columns: repeat(3, minmax(225px, 1fr));
 }
 
+.video-production,
+.audio-production {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .image-hover {
     cursor: pointer;
     padding: 0;
@@ -814,9 +820,35 @@ footer {
         --font-size-button: 14px;
     }
 
-    .social {
-        display: none;
+    .menu {
+        overflow:visible;
     }
+
+    .social {
+        height: 20vh;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 80vh;
+        gap: 5px;
+        bottom: 0;
+    }
+    
+    .social a i {
+        background-color: #fff;
+        right: 0;
+        margin: auto 1px;
+
+        font-size: 2rem !important;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: rgb(26, 26, 26);
+    }
+
+
 
     label#toggle-menu {
         top: 0;

@@ -20,12 +20,12 @@ const scrollFixMenu = document.querySelector('div.menu');
 const youtubeLightbox = document.querySelector('.youtube-lightbox');
 const closeButton = document.querySelector('.close-button');
 const containerLightbox = document.querySelector("div.overlay-youtube");
-const portThumb = document.querySelectorAll(".image-hover");
+const portThumbV = document.querySelectorAll(".video-content .portfolio-thumb .image-hover");
 const iFrameYt = document.querySelector('.slider-responsive iframe');
 const previewsButton = document.querySelector('.previews-button');
 const nextButton = document.querySelector('.next-button');
 
-let linkYt = [
+let linkYtSV = [
     // DOVPO MVV II PANDA
     "https://www.youtube.com/embed/KPVzb68hLTg", 
     //DITJEN PST KEMENTAN
@@ -53,18 +53,46 @@ let linkYt = [
     //TELIN
     "https://www.youtube.com/embed/S1mSUW_h9aA"
 ];
+// let linkYtAV = [
+//     // DOVPO MVV II PANDA
+//     "https://www.youtube.com/embed/KPVzb68hLTg", 
+//     //DITJEN PST KEMENTAN
+//     "https://www.youtube.com/embed/xgByZdZDMws", 
+//     //MARCEDES-BENZ
+//     "https://www.youtube.com/embed/VG70Nr-hYW0", 
+//     //MK RECORD
+//     "https://www.youtube.com/embed/cXLdBBSF-wo", 
+//     //2NY
+//     "https://www.youtube.com/embed/O5LWTjrV2X0", 
+//     //BAPETEN
+//     "https://www.youtube.com/embed/NR40jM4qn8s",
+//     //AVRIST
+//     "https://www.youtube.com/embed/NijRMQieNnY",
+//     //BNI JAVA JAZZ 2019
+//     "https://www.youtube.com/embed/IODja-vNzmc",
+//     //EYE LEVEL
+//     "https://www.youtube.com/embed/7-G8hkzbF40",
+//     //KIMIA FARMA
+//     "https://www.youtube.com/embed/B5-XvvziYh0",
+//     // Multistakeholder Forestry Programme Indonesia
+//     "https://www.youtube.com/embed/5diEztdAmhY",
+//     //PASPAMPRES Short-Movie
+//     "https://www.youtube.com/embed/IkejqLyOcFk",
+//     //TELIN
+//     "https://www.youtube.com/embed/S1mSUW_h9aA"
+// ];
 
 
-for (let i=0; i < portThumb.length; i++) {
-    portThumb[i].addEventListener('click', function(){
+for (let i=0; i < portThumbV.length; i++) {
+    portThumbV[i].addEventListener('click', function(){
         containerLightbox.classList.toggle('close-youtube');
-        iFrameYt.setAttribute("src", linkYt[i]);
+        iFrameYt.setAttribute("src", linkYtSV[i]);
         if (i == 0) {
             previewsButton.classList.add('hide-navigation');
         } else {
             previewsButton.classList.remove('hide-navigation');
         }
-        if (i+1 >= portThumb.length) {
+        if (i+1 >= portThumbV.length) {
             nextButton.classList.add('hide-navigation');
         }
         else {
@@ -73,7 +101,7 @@ for (let i=0; i < portThumb.length; i++) {
         // Previews button
         previewsButton.addEventListener('click', function(){
             i--;
-            iFrameYt.setAttribute("src", linkYt[i]);
+            iFrameYt.setAttribute("src", linkYtSV[i]);
             if (i == 0) {
                 previewsButton.classList.add('hide-navigation');
             } else {
@@ -85,8 +113,8 @@ for (let i=0; i < portThumb.length; i++) {
         //next button
         nextButton.addEventListener('click', function(){
             i++;
-            iFrameYt.setAttribute("src", linkYt[i]);
-            if (i+1 >= portThumb.length) {
+            iFrameYt.setAttribute("src", linkYtSV[i]);
+            if (i+1 >= portThumbV.length) {
                 nextButton.classList.add('hide-navigation');
             } else {
                 previewsButton.classList.remove('hide-navigation');
