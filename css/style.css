@@ -7,7 +7,7 @@
 
 /* Remove default margin */
 body,
-h1,
+h1, 
 h2,
 h3,
 h4,
@@ -131,7 +131,7 @@ body {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
     filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
     gap: 30px;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 1000;
 
 }
@@ -198,6 +198,35 @@ nav.navbar ul li a:hover {
 
 label#toggle-menu {
     display: none;
+}
+
+.icon-contact-overlay {
+    z-index: 100;
+    width: 192px;
+    height: 24px;
+    /* padding: 0 3px; */
+    margin: 0 5px;
+    border-radius: 12px;
+    position: fixed;
+    left: calc(100vw - 208px);
+    top: calc(100vh - 36px);
+    background-color: #fff;
+}
+
+.icon-contact-overlay a img {
+    max-height: 24px;
+}
+
+.icon-contact-overlay  a span {
+    font-size: 12px;
+}
+
+.icon-contact-overlay  a {
+    gap: 5px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 
@@ -818,6 +847,10 @@ footer {
         --font-size-p: 12px;
         --font-size-h1: 1.5em;
         --font-size-button: 14px;
+    }
+
+    .social {
+        display: none;
     }
 
     /* .menu {
