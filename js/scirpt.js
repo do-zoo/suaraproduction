@@ -51,7 +51,11 @@ let linkYtSV = [
     //PASPAMPRES Short-Movie
     "https://www.youtube.com/embed/IkejqLyOcFk",
     //TELIN
-    "https://www.youtube.com/embed/S1mSUW_h9aA"
+    "https://www.youtube.com/embed/S1mSUW_h9aA",
+    // BINTARO COFFEE FESTIVAL
+    "https://www.youtube.com/embed/MGhjb4V9_kk",
+    // NOVO NORDISK
+    "https://www.youtube.com/embed/ZBcru-oAxgc"
 ];
 // let linkYtAV = [
 //     // DOVPO MVV II PANDA
