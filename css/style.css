@@ -209,7 +209,7 @@ label#toggle-menu {
     border-radius: 12px;
     position: fixed;
     left: calc(100vw - 208px);
-    top: calc(100vh - 36px);
+    top: calc(100vh - 60px);
     background-color: #fff;
 }
 
