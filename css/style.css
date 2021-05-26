@@ -209,7 +209,7 @@ label#toggle-menu {
     border-radius: 12px;
     position: fixed;
     left: calc(100vw - 208px);
-    top: calc(100vh - 60px);
+    top: calc(100vh - 48px);
     background-color: #fff;
 }
 
@@ -474,8 +474,6 @@ a.button.has-icon {
 }
 
 .portfolio-thumb {
-    /* position: relative; */
-    /* display: inline-block; */
     -moz-transition: transform 0.75s ease-in-out, filter 0.75s ease-in-out;
     -webkit-transition: transform 0.75s ease-in-out, filter 0.75s ease-in-out;
     -o-transition: transform 0.75s ease-in-out, filter 0.75s ease-in-out;
@@ -492,6 +490,9 @@ a.button.has-icon {
 
 .thumb-image {
     background-color: #000;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -501,7 +502,10 @@ a.button.has-icon {
     width: 100%;
     height: 100%;
     position: absolute;
-    backface-visibility: hidden;   
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden; 
     transform: rotateY(180deg);
 }
 
