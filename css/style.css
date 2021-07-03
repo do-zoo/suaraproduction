@@ -7,7 +7,7 @@
 
 /* Remove default margin */
 body,
-h1, 
+h1,
 h2,
 h3,
 h4,
@@ -217,11 +217,11 @@ label#toggle-menu {
     max-height: 24px;
 }
 
-.icon-contact-overlay  a span {
+.icon-contact-overlay a span {
     font-size: 12px;
 }
 
-.icon-contact-overlay  a {
+.icon-contact-overlay a {
     gap: 5px;
     color: #000;
     display: flex;
@@ -466,12 +466,17 @@ a.button.has-icon {
     padding-bottom: 30px;
 }
 
+.play-mobile {
+    /* position: relative; */
+    display: none;
+}
+
 .image-hover {
     cursor: pointer;
     padding: 0;
     margin: 0;
     line-height: inherit;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .portfolio-thumb {
@@ -506,7 +511,7 @@ a.button.has-icon {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
-    backface-visibility: hidden; 
+    backface-visibility: hidden;
     transform: rotateY(180deg);
 }
 
@@ -520,7 +525,7 @@ a.button.has-icon {
 .icon-container i {
     font-size: 3rem;
     margin: auto auto;
-    
+
 }
 
 
@@ -883,6 +888,27 @@ footer {
         --font-size-p: 12px;
         --font-size-h1: 1.5em;
         --font-size-button: 14px;
+    }
+
+    .play-icon {
+        display: none;
+    }
+
+    .play-mobile {
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        height: 36px;
+        line-height: 36px;
+        bottom: 0;
+        position: absolute;
+        text-align: center;
+    }
+
+    .portfolio-thumb:hover {
+        transform: rotateY(0deg);
+        transition-delay: 0.1s;
     }
 
     .social {
