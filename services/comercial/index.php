@@ -83,6 +83,29 @@ echo "
         </div>
     </header>
 
+    <section>
+        <div class="container">
+            <div class="image-container">
+                <div class="image-box">
+                    <img src="../../img/example.jpg" alt="">
+                </div>
+                <div class="category-box">
+                    <div class="item-list">
+                        <div class="item1">Item 1</div>
+                        <div class="item2">Item 2</div>
+                        <div class="item3">Item 3</div>
+                        <div class="item4">Item 4</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="desc-container">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
 
 

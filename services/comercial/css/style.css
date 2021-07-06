@@ -1,78 +1,5 @@
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-    margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
-    list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-    max-width: 100%;
-    display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
+*,*::before,*::after{box-sizing: border-box;}body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{margin: 0;}ul[role="list"],ol[role="list"]{list-style: none;}html:focus-within{scroll-behavior: smooth;}body{min-height: 100vh;text-rendering: optimizeSpeed;line-height: 1.5;}a:not([class]){text-decoration-skip-ink: auto;}img,picture{max-width: 100%;display: block;}input,button,textarea,select {font: inherit;
+}@media (prefers-reduced-motion: reduce) {html:focus-within {scroll-behavior: auto;}*,*::before,*::after {animation-duration: 0.01ms !important;animation-iteration-count: 1 !important;transition-duration: 0.01ms !important;scroll-behavior: auto !important;}}
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@300;400;600;700&display=swap');
 
@@ -247,7 +174,75 @@ header:after {
     background-color: rgba(0, 0, 0, 0.05);
     z-index: 25;
 }
+/* end Header */
 
+.container {
+    display: grid;
+    width: 100%;
+    height: calc(100vh - 60px);
+    grid-template-columns: 3fr 2fr;
+    
+}
+
+.image-container{
+    background-image: url(../../../img/example.jpg);
+    width: 100%;
+    height: 100%;
+    visibility: inherit;
+    align-items: center;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.image-box{
+    width: 100%;
+    height: calc(100vh - 110px);
+    overflow: hidden;
+}
+.image-box img{
+    width: 100%;
+    /* height: calc(100% - 50px); */
+}
+
+.category-box {
+    padding: 0 20px;
+    background-color: black;
+    color: 000;
+    width: 100%;
+    height: 50px;
+}
+
+.item-list{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.item1,  
+.item2,  
+.item3,  
+.item4{
+    cursor: pointer;
+    border-radius: 10px 0 10px 0;
+    box-shadow: inset 0 0 0 2px black;
+    border: 2px solid white;
+    background-color: #fff;
+    width: calc(25% - 10px);
+    text-align: center;
+}
+
+.item1:hover,  
+.item2:hover,  
+.item3:hover,  
+.item4:hover {
+    background-color: #9e9d9b;
+}
 
 /* FOOTER */
 footer {
