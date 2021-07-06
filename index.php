@@ -1,28 +1,30 @@
-<?php ?>
+<?php
+echo "
 <!DOCTYPE html>
-<html lang="en">
+<html lang=\"en\">
+
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Suara Production, Video editing, Video Production, Audio editing, audio, video, wedding organizer, WO, Video Editing Tangerang Selatan, banten, house Production">
-    <meta name="description" content="Suara Production is a full service video and audio production located in Tangerang Selatan, Indonesia. Suara Production is the leading production services company for Videography, Editing, Casting, Audio Post Production, and many more.">
-    <link rel="icon" sizes="512x512" href="img/logo/my-logo/icon-suara-production-512.png" type="image/png">
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0\">
+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+    <meta name=\"keywords\" content=\"Suara Production, Video editing, Video Production, Audio editing, audio, video, wedding organizer, WO, Video Editing Tangerang Selatan, banten, house Production\">
+    <meta name=\"description\" content=\"Suara Production is a full service video and audio production located in Tangerang Selatan, Indonesia. Suara Production is the leading production services company for Videography, Editing, Casting, Audio Post Production, and many more.\">
+    <link rel=\"icon\" sizes=\"512x512\" href=\"img/logo/my-logo/icon-suara-production-512.png\" type=\"image/png\">
     <title>Suara Production - Inget Gue</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <script type="application/ld+json">
+    <link rel=\"stylesheet\" href=\"css/style.css\">
+    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css\">
+    <script type=\"application/ld+json\">
         {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "url": "https://www.suaraproduction.com/",
-            "logo": "https://www.suaraproduction.com/img/logo/my-logo/LOGO-SUARA-PRODUCTION-HITAM.png"
+            \"@context\": \"https://schema.org\",
+            \"@type\": \"Organization\",
+            \"url\": \"https://www.suaraproduction.com/\",
+            \"logo\": \"https://www.suaraproduction.com/img/logo/my-logo/LOGO-SUARA-PRODUCTION-HITAM.png\"
         }
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMLESTLEYR"></script>
+    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-DMLESTLEYR\"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -37,6 +39,9 @@
 
 
 </head>
+";
+
+?>
 
 <body>
     <header>
