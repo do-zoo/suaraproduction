@@ -1,4 +1,4 @@
-<?php 
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,22 +14,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "url": "https://www.suaraproduction.com/",
-          "logo": "https://www.suaraproduction.com/img/logo/my-logo/LOGO-SUARA-PRODUCTION-HITAM.png"
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.suaraproduction.com/",
+            "logo": "https://www.suaraproduction.com/img/logo/my-logo/LOGO-SUARA-PRODUCTION-HITAM.png"
         }
-        </script>
+    </script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DMLESTLEYR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMLESTLEYR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-DMLESTLEYR');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DMLESTLEYR');
+    </script>
 
 
 
@@ -63,12 +66,9 @@
                 <i class="bi bi-list"></i>
             </label>
             <div class="social">
-                <a href="https://api.whatsapp.com/send?phone=6281318423962&text=Hi%20Suara%20Production." target="_blank" class="social-item twitter"><i
-                        class="bi bi-whatsapp" style="font-size: 1.5rem;"></i></a>
-                <a href="https://www.youtube.com/channel/UC-jW62zINDEiHi0qfTS4RPQ" target="_blank"
-                    class="social-item youtube"><i class="bi bi-youtube" style="font-size: 1.5rem;"></i></a>
-                <a href="https://www.instagram.com/suaraproduction/" target="_blank" class="social-item instagram"><i
-                        class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=6281318423962&text=Hi%20Suara%20Production." target="_blank" class="social-item twitter"><i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i></a>
+                <a href="https://www.youtube.com/channel/UC-jW62zINDEiHi0qfTS4RPQ" target="_blank" class="social-item youtube"><i class="bi bi-youtube" style="font-size: 1.5rem;"></i></a>
+                <a href="https://www.instagram.com/suaraproduction/" target="_blank" class="social-item instagram"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
             </div>
         </div>
         <div class="header-1">
@@ -79,8 +79,8 @@
 
         <div class="icon-contact-overlay">
             <a href="https://api.whatsapp.com/send?phone=6281318423962&text=Hi%20Suara%20Production." target="_blank" rel="noopener noreferrer">
-            <img src="img/logo/icon/whatsapp.png">
-            <span>Chat with Us on WhatsApp</span>
+                <img src="img/logo/icon/whatsapp.png">
+                <span>Chat with Us on WhatsApp</span>
             </a>
         </div>
     </header>
@@ -110,11 +110,11 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/DOVPO-MVV-II-PANDA.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/DOVPO-MVV-II-PANDA.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
-                                </div>    
+                                </div>
                             </div>
                         </section>
                         <section class="portfolio-thumb">
@@ -125,7 +125,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/KARTU-TANI.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/KARTU-TANI.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -140,7 +140,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/MERCEDES-BENZ.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/MERCEDES-BENZ.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -155,7 +155,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/MK-RECORD.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/MK-RECORD.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -170,7 +170,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/2NY-1.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/2NY-1.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -185,7 +185,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/BAPETEN.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/BAPETEN.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -200,7 +200,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/AVRIST.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/AVRIST.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -215,7 +215,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/BNI-JAVA-JAZZ-2019.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/BNI-JAVA-JAZZ-2019.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -230,7 +230,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/EYE-LEVEL.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/EYE-LEVEL.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -245,7 +245,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/KIMIA-FARMA.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/KIMIA-FARMA.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -260,7 +260,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/MFP.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/MFP.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -275,7 +275,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/PASPAMPRES.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/PASPAMPRES.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -290,7 +290,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/TELIN.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/TELIN.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -305,7 +305,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/BCF-X-POROS-KOPI.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/BCF-X-POROS-KOPI.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -320,7 +320,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/video-prod/NOVO-NORDISK.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/video-prod/NOVO-NORDISK.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -347,7 +347,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/audio-prod/PERTAMINA-EPS-1.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/audio-prod/PERTAMINA-EPS-1.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -362,7 +362,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/audio-prod/BANK-BRI.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/audio-prod/BANK-BRI.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -377,7 +377,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/audio-prod/FREE-FIRE.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/audio-prod/FREE-FIRE.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -392,7 +392,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/audio-prod/OCTO-MOBILE.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/audio-prod/OCTO-MOBILE.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -407,7 +407,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/audio-prod/SMARTFREN.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/audio-prod/SMARTFREN.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -422,7 +422,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/audio-prod/PERTAMINA-EPS-2.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/audio-prod/PERTAMINA-EPS-2.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -437,7 +437,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/audio-prod/SUPER-MUSIC.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/audio-prod/SUPER-MUSIC.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -452,7 +452,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/audio-prod/PERTAMINA-EPS-3.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/audio-prod/PERTAMINA-EPS-3.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -467,7 +467,7 @@
                                     </div>
                                 </div>
                                 <div class="thumb-image">
-                                    <img src="img/Portfolio/Thumbnail/audio-prod/YEOS.jpg" class="image-thumb"alt="">
+                                    <img src="img/Portfolio/Thumbnail/audio-prod/YEOS.jpg" class="image-thumb" alt="">
                                 </div>
                                 <div class="play-mobile">
                                     <h1>PLAY THIS VIDEO!</h1>
@@ -595,8 +595,8 @@
                         </a></div> -->
                 </div>
             </div>
-            
-            
+
+
 
             <div id="client-list" class="client-brand">
                 <div class="description">
@@ -697,10 +697,10 @@
                             <img src="img/logo/client-logo/SVG/telin.svg" title="TELIN" alt="TELIN LOGO">
                         </div>
                         <div class="client-thumb item-remove">
-                            <img >
+                            <img>
                         </div>
                         <div class="client-thumb item-remove">
-                            <img >
+                            <img>
                         </div>
                         <div class="client-thumb">
                             <img src="img/logo/client-logo/SVG/avrist.svg" title="AVRIST" alt="AVRIST LOGO">
@@ -734,7 +734,7 @@
         <div class="footer-content">
             <section class="footer-brand">
                 <a href="#">
-                <img src="img/bottom/LOGO-SUARA-PRODUCTION-PUTIH.png" alt="Suara Production">
+                    <img src="img/bottom/LOGO-SUARA-PRODUCTION-PUTIH.png" alt="Suara Production">
                 </a>
                 <span>Video Production House Indonesia</span>
             </section>
@@ -777,12 +777,12 @@
                 <div class="next-button"><i class="bi bi-chevron-right"></i></div>
                 <div class="close-button"><i class="bi bi-x"></i></div>
             </div>
-        
-        
+
+
             <div class="slider">
                 <div class="thumb-container">
                     <div class="slider-responsive">
-                        <iframe width="560" height="315"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
