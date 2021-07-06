@@ -793,7 +793,7 @@ echo "
             </div>
         </div>
     </div>
-    <script src="js/scirpt.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
