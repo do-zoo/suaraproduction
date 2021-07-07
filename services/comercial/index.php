@@ -100,9 +100,9 @@ echo "
 
             </div>
             <div class="desc-container">
-                <ul>
-                    <li></li>
-                </ul>
+                <div class="judul">
+                    <h1>hahahjhhKJahkhkhakjdhk bjshkjhkjha jasbhkjhkjahknbkn kashndsjanskjdn</h1>
+                </div>
             </div>
         </div>
     </section>

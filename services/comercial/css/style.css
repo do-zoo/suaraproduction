@@ -244,6 +244,13 @@ header:after {
     background-color: #9e9d9b;
 }
 
+.desc-container{
+    margin: 20px;
+}
+
+
+
+
 /* FOOTER */
 footer {
     overflow: hidden;
