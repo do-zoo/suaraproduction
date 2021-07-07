@@ -7,3 +7,4 @@ deployment:
     - /bin/cp -R img $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
     - /bin/cp -R services $DEPLOYPATH
+    - /bin/cp -R admin $DEPLOYPATH
