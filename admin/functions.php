@@ -2,7 +2,7 @@
 // koneksi ke database
 // $conn = mysqli_connect("localhost", "root", "", "suara_production");
 
-$conn = mysqli_connect("localhost:3306", "admin_sp", "31Oktober88", "n1498735_suara_production");
+$conn = mysqli_connect("localhost", "admin_sp", "31Oktober88", "n1498735_suara_production");
 
 function query($query)
 {
