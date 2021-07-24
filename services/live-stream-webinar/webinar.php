@@ -95,9 +95,9 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
 
 
                     </li>
-                    <li><a href="#client-list">OUR CLIENT</a></li>
-                    <li><a href="#footer-section">CONTACT</a></li>
-                    <li><a href="#footer-section">ABOUT</a></li>
+                    <li><a href="https://suaraproduction.com/#client-list">OUR CLIENT</a></li>
+                    <li><a href="https://suaraproduction.com/#footer-section">CONTACT</a></li>
+                    <li><a href="https://suaraproduction.com/#footer-section">ABOUT</a></li>
                 </ul>
             </nav>
 
