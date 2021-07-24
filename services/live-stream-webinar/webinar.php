@@ -85,7 +85,7 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
                                 <li><a href="#">Company Profile</a></li>
                                 <li><a href="#">Digital Content </a></li>
                                 <li><a href="#">Explainer Video</a></li>
-                                <li><a href="/services/live-stream-webinar/index.php">Live Stream / Webinar </a></li>
+                                <li><a href="#">Live Stream / Webinar </a></li>
                                 <li><a href="#">Training Video</a></li>
                                 <li><a href="#">Presentation Video</a></li>
                             </ul>
@@ -120,108 +120,180 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
             </a>
         </div>
     </header>
-    <section class="container">
-        <div class="header">
-            <div class="frontLeft">
-                <div class="content">
-                    <div class="judul">
-                        <span class="left">TANGSEL</span>
-                        <span class="right">STREAM</span>
-                    </div>
-                    <div class="desc">
-                        <span> Paket murah webinar dan streaming</span>
-                    </div>
-                    <div class="button">
-                        <span>SEE OUR SERVICES</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="frontRight">
-                <img src="../../img/services/webinar/SVG/frontRight.svg">
-            </div>
-            <div class="backLeft">
-                <img src="../../img/services/webinar/SVG/backLeft.svg">
-            </div>
-            <div class="backRight"></div>
-        </div>
-        <div class="desc-product">
-            <div class="desc-product-top">
-                <div class="pricelist-container">
-                    <div class="judul-paket">
-                        <span class="gede">PROPER </span><span class="kecil">PACK</span>
-                    </div>
-                    <div class="pricelist">
-                        <?php foreach ($dataProperPack as $data) : ?>
-                            <div class="cont-price">
-                                <div class="nama"><?= $data["nama"];  ?>
-                                </div>
-                                <div class="id-paket" style="display: none;">
-                                    <?= $data["id"];  ?>
-                                </div>
-                                <div class="harga"> <?php echo buatRp($data["harga"]); ?>
-                                </div>
+
+    <div class="detail-product">
+        <div class="proper-cont">
+            <div class="left-content">
+                <div class="judul-content">
+                    <h1>PROPER</h1>
+                    <h2>PACK</h2>
+                </div>
+                <div class="kategori-item">
+
+                    <?php foreach ($dataProperPack as $data) : ?>
+                        <div class="cont-price">
+                            <div class="nama-kategori"><?= $data["kategori"];  ?>
                             </div>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-                <div class="illustration">
-                    <img src="../../img/services/webinar/SVG/assets/right.svg">
-                </div>
-            </div>
-            <div class="desc-product-bottom">
-                <div class="pricelist-container">
-                    <div class="judul-paket">
-                        <span class="gede">STANDARD </span><span class="kecil">PACK</span>
-                    </div>
-                    <div class="pricelist">
-                        <?php foreach ($dataStandardPack as $data) : ?>
-                            <div class="cont-price">
-                                <div class="nama"><?= $data["nama"];  ?>
-                                </div>
-                                <div class="id-paket" style="display: none;">
-                                    <?= $data["id"];  ?>
-
-                                </div>
-                                <div class="harga"> <?php echo buatRp($data["harga"]); ?>
-                                </div>
+                            <div class="id-paket"><?= $data["id"]; ?></div>
+                            <div class="nama-paket"> <?= $data["nama"]; ?>
                             </div>
-                        <?php endforeach; ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+            </div>
+
+            <div class="first-loader loader">
+                <div class="loader-cont">
+                    <img src="../../img/loader/gif/loader_gif.gif" class="loader-gif">
+                </div>
+            </div>
+
+            <div class="right-content">
+                <div class="price-cont">
+                    <div class="price-isi">
+                        <span>
+                            <?= buatRp($dataProperPack[0]["harga"]); ?>
+                        </span>
                     </div>
                 </div>
-                <div class="illustration">
-                    <img src="../../img/services/webinar/SVG/assets/left.svg">
+
+                <div class="detail-tools">
+                    <div class="tools-judul">
+                        <span>Tools</span>
+                    </div>
+                    <div class="tools-isi">
+                        <div>
+                            <ul>
+                                <li>Sony NX100 + video tripod + cameraman</li>
+                                <li>(2x) Dison LED + (2x) Apurture + dome</li>
+                                <li>3-5 additional laptop</li>
+                                <li>2 unit 42” TV+Standing ( HDMI 15 m ) for promter / slide and Priview</li>
+                                <li>Digital mixer, (2) wirelless mic, (2) 15” Yamaha DBR standing
+                                    speaker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-main-power">
+                    <div class="main-power-judul">
+                        <span>Main Power</span>
+                    </div>
+                    <div class="main-power-isi">
+                        <div class="isi-kanan">
+                            <ul>
+                                <li>Director</li>
+                                <li>Floor Director</li>
+                                <li>Zoom Host</li>
+                                <li>Pin Crew</li>
+                                <li>Admin</li>
+                                <li>Telepromter/presentation
+                                    Slide operator</li>
+                            </ul>
+                        </div>
+                        <div class="isi-kiri">
+                            <ul>
+                                <li>3D Stage</li>
+                                <li>Flyer</li>
+                                <li>Lowerthird</li>
+                                <li>Opening</li>
+                                <li>Bumper Segment</li>
+                                <li>Bumper Speaker</li>
+                                <li>Closing</li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="portfolio">
-            <div class="image-gallery-container">
-                <div class="image-gallery">
-                    <?php for ($i = 0; $i < 30; $i++) : ?>
-                        <img src="../../img/services/webinar/images/WEBINAR_LKPP_KETUA_MENTRI.png">
-                    <?php endfor; ?>
+        <div class="standard-cont">
+            <div class="left-content">
+                <div class="judul-content">
+                    <h1>STANDARD</h1>
+                    <h2>PACK</h2>
+                </div>
+                <div class="kategori-item">
+
+                    <?php foreach ($dataStandardPack as $data) : ?>
+                        <div class="cont-price">
+                            <div class="nama-kategori"><?= $data["kategori"];  ?>
+                            </div>
+                            <div class="id-paket"><?= $data["id"]; ?></div>
+                            <div class="nama-paket"> <?= $data["nama"]; ?>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            <div class="second-loader loader">
+                <div class="loader-cont">
+                    <img src="../../img/loader/gif/loader_gif.gif" class="loader-gif">
                 </div>
             </div>
 
-            <div class="client-webinar">
-                <div class="judul-client">WE HAVE DESERVED</div>
-                <div class="client-cont">
-                    <?php $i = 0; ?>
-                    <?php for ($i; $i < 10; $i++) : ?>
-                        <img src="../../img/logo/client-logo/SVG/aikido.svg">
-                    <?php endfor; ?>
+            <div class="right-content">
+                <div class="price-cont">
+                    <div class="price-isi">
+                        <span>
+                            <?= buatRp($dataStandardPack[0]["harga"]); ?>
+                        </span>
+                    </div>
+                </div>
+                <div class="detail-tools">
+                    <div class="tools-judul">
+                        <span>Tools</span>
+                    </div>
+                    <div class="tools-isi">
+                        <div>
+                            <ul>
+                                <li>Sony mirrorless a 6500 + sony lens 18-105 F4 G + video tripod + cameraman</li>
+                                <li>(4x) Dison LED</li>
+                                <li>1-2 additional laptop</li>
+                                <li>1 unit 42” TV+standing ( HDMI 15 m ) for Priview</li>
+                                <li>Analog mixer, (2) wireless mic, 15” speaker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-main-power">
+                    <div class="main-power-judul">
+                        <span>Main Power</span>
+                    </div>
+                    <div class="main-power-isi">
+                        <div class="isi-kanan">
+                            <ul>
+                                <li>Director</li>
+                                <li>Floor Director</li>
+                                <li>Zoom Host</li>
+                                <li>Pin Crew</li>
+                                <li>Admin</li>
+                                <li>Telepromter/presentation
+                                    Slide operator</li>
+                            </ul>
+                        </div>
+                        <div class="isi-kiri">
+                            <ul>
+                                <li>2D Background</li>
+                                <li>Flyer</li>
+                                <li>Lowerthird</li>
+                                <li>Opening</li>
+                                <li>Bumper Segment</li>
+                                <li>Bumper Speaker</li>
+                                <li>Closing</li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="closing">
-            <div class="kata-penutup">
-                <h1>Kata-Kata Penutupan</h1>
-            </div>
-            <div class="bg-image-bottom">
-            </div>
-        </div>
-    </section>
+
 
 
     <footer id="footer-section">
@@ -263,7 +335,8 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
     </footer>
 
 
-    <script src="js/script.js"></script>
-</body>
 
-</html>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/ajax.js"></script>
+</body>
