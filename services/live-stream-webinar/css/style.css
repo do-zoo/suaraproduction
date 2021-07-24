@@ -439,7 +439,8 @@ header:after {
     width: 35%;
 }
 
-.cont-price {
+.cont-price,
+.cont-price-webinar {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 10px;
     font-size: 1rem;
@@ -449,9 +450,22 @@ header:after {
     background-color: #fff;
 }
 
-.cont-price .active,
-.cont-price:hover {
+.cont-price-webinar {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+
+
+.cont-price-webinar-active,
+.cont-price:hover,
+.cont-price-webinar:hover {
     transform: scale(110%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
     z-index: 10;
 }
 

@@ -132,7 +132,7 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
                 <div class="kategori-item">
 
                     <?php foreach ($dataProperPack as $data) : ?>
-                        <div class="cont-price">
+                        <div class="cont-price-webinar" id="data<?= $data["id"]; ?>">
                             <div class="nama-kategori"><?= $data["kategori"];  ?>
                             </div>
                             <div class="id-paket"><?= $data["id"]; ?></div>
@@ -218,7 +218,7 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
                 <div class="kategori-item">
 
                     <?php foreach ($dataStandardPack as $data) : ?>
-                        <div class="cont-price">
+                        <div class="cont-price-webinar" id="data<?= $data["id"]; ?>">
                             <div class="nama-kategori"><?= $data["kategori"];  ?>
                             </div>
                             <div class="id-paket"><?= $data["id"]; ?></div>

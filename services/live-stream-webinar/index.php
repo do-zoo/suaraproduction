@@ -132,7 +132,9 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
                         <span> Paket murah webinar dan streaming</span>
                     </div>
                     <div class="button">
-                        <span>SEE OUR SERVICES</span>
+                        <a href="https://www.suaraproduction.com/services/live-stream-webinar/webinar.php" style="text-decoration: none; color: #05B9F3;" target="blank">
+                            <span>SEE OUR SERVICES</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -153,15 +155,14 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
                     </div>
                     <div class="pricelist">
                         <?php foreach ($dataProperPack as $data) : ?>
-                            <div class="cont-price">
-                                <div class="nama"><?= $data["nama"];  ?>
+                            <a href="http://www.suaraproduction.com/services/live-stream-webinar/webinar.php?post=<?= $data["id"]; ?>" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #05B9F3;">
+                                <div class="cont-price">
+                                    <div class="nama"><?= $data["nama"];  ?>
+                                    </div>
+                                    <div class="harga"> <?php echo buatRp($data["harga"]); ?>
+                                    </div>
                                 </div>
-                                <div class="id-paket" style="display: none;">
-                                    <?= $data["id"];  ?>
-                                </div>
-                                <div class="harga"> <?php echo buatRp($data["harga"]); ?>
-                                </div>
-                            </div>
+                            </a>
                         <?php endforeach; ?>
                     </div>
                 </div>
@@ -176,16 +177,14 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
                     </div>
                     <div class="pricelist">
                         <?php foreach ($dataStandardPack as $data) : ?>
-                            <div class="cont-price">
-                                <div class="nama"><?= $data["nama"];  ?>
+                            <a href="http://www.suaraproduction.com/services/live-stream-webinar/webinar.php?post=<?= $data["id"]; ?>" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #05B9F3;">
+                                <div class="cont-price">
+                                    <div class="nama"><?= $data["nama"];  ?>
+                                    </div>
+                                    <div class="harga"> <?php echo buatRp($data["harga"]); ?>
+                                    </div>
                                 </div>
-                                <div class="id-paket" style="display: none;">
-                                    <?= $data["id"];  ?>
-
-                                </div>
-                                <div class="harga"> <?php echo buatRp($data["harga"]); ?>
-                                </div>
-                            </div>
+                            </a>
                         <?php endforeach; ?>
                     </div>
                 </div>
