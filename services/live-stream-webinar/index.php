@@ -81,13 +81,13 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
                     <li><a class="active" href="#our-services">OUR SERVICES</a>
                         <div class="sub-menu sub-menu-services">
                             <ul>
-                                <li><a href="#">Comercial</a></li>
-                                <li><a href="#">Company Profile</a></li>
-                                <li><a href="#">Digital Content </a></li>
-                                <li><a href="#">Explainer Video</a></li>
-                                <li><a href="/services/live-stream-webinar/index.php">Live Stream / Webinar </a></li>
-                                <li><a href="#">Training Video</a></li>
-                                <li><a href="#">Presentation Video</a></li>
+                                <li><a href="https://suaraproduction.com/services/comercial/index.php">Comercial</a></li>
+                                <li><a href="https://suaraproduction.com/services/company-profile/index.php">Company Profile</a></li>
+                                <li><a href="https://suaraproduction.com/services/digital-content/index.php">Digital Content </a></li>
+                                <li><a href="https://suaraproduction.com/services/explainer-video/index.php">Explainer Video</a></li>
+                                <li><a href="https://suaraproduction.com/services/live-stream-webinar/index.php">Live Stream / Webinar </a></li>
+                                <li><a href="https://suaraproduction.com/services/training-video/index.php">Training Video</a></li>
+                                <li><a href="https://suaraproduction.com/services/presentation-video/index.php">Presentation Video</a></li>
                             </ul>
 
                         </div>
