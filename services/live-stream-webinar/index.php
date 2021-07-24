@@ -155,7 +155,7 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
                     </div>
                     <div class="pricelist">
                         <?php foreach ($dataProperPack as $data) : ?>
-                            <a href="http://www.suaraproduction.com/services/live-stream-webinar/webinar.php?post=<?= $data["id"]; ?>" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #05B9F3;">
+                            <a href="https://www.suaraproduction.com/services/live-stream-webinar/webinar.php" style="text-decoration: none; color: #05B9F3;" target="blank">
                                 <div class="cont-price">
                                     <div class="nama"><?= $data["nama"];  ?>
                                     </div>
@@ -177,7 +177,7 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
                     </div>
                     <div class="pricelist">
                         <?php foreach ($dataStandardPack as $data) : ?>
-                            <a href="http://www.suaraproduction.com/services/live-stream-webinar/webinar.php?post=<?= $data["id"]; ?>" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #05B9F3;">
+                            <a href="https://www.suaraproduction.com/services/live-stream-webinar/webinar.php" style="text-decoration: none; color: #05B9F3;" target="blank">
                                 <div class="cont-price">
                                     <div class="nama"><?= $data["nama"];  ?>
                                     </div>
