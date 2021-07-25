@@ -50,26 +50,5 @@ $(document).ready(function(){
            
         });
     });
-          
-
-
-
-    // $('.cont-price-webinar').on('click', function(){
-    //     //muculkan loading
-    //     console.log($('.id-paket').html());
-    //     $('.standard-cont .right-content').hide();
-    //     $('.loader').show();
-
-    //     //ajax menggunakan load
-    //     // $('#container').load('ajax/mahasiswa.php?keyword='+ $('#keyword').val());
-
-    //     //$.get()
-    //     $.get('ajax/standard.php?value=' + $('.id-paket').html(), function(data){
-    //         $('.standard-cont .right-content').html(data);
-    //         $('.loader').hide();
-    //         $('.standard-cont .right-content').show();
-
-    //     });
-    // });
 
 });

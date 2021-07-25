@@ -40,7 +40,14 @@
 </head>
 
 
+
+
 <body>
+    <div class="loader">
+        <div class="loader-cont">
+            <img src="img/loader/gif/loader_gif.gif" class="loader-gif">
+        </div>
+    </div>
     <header>
         <div class="menu">
             <div class="brand">
@@ -813,6 +820,8 @@
         </div>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jq.js"></script>
 </body>
 
 </html>
