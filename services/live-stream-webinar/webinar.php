@@ -59,6 +59,11 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
 
 
 <body>
+    <div class="loader">
+        <div class="loader-cont">
+            <img src="https://www.suaraproduction.com/img/loader/gif/loader_gif.gif" class="loader-gif">
+        </div>
+    </div>
     <header>
         <div class="menu">
             <div class="brand">
@@ -144,7 +149,7 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
 
             </div>
 
-            <div class="first-loader loader">
+            <div class="first-loader">
                 <div class="loader-cont">
                     <img src="../../img/loader/gif/loader_gif.gif" class="loader-gif">
                 </div>
@@ -228,7 +233,7 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
                     <?php endforeach; ?>
                 </div>
             </div>
-            <div class="second-loader loader">
+            <div class="second-loader">
                 <div class="loader-cont">
                     <img src="../../img/loader/gif/loader_gif.gif" class="loader-gif">
                 </div>

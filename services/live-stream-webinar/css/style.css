@@ -1,3 +1,15 @@
+.loader {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    filter: grayscale(100%);
+}
+
+
 *,
 *::before,
 *::after {
@@ -541,7 +553,8 @@ header:after {
 
 }
 
-.loader {
+.first-loader,
+.second-loader {
     padding: 30px 50px;
     height: 110vh;
     width: 100%;

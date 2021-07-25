@@ -45,7 +45,7 @@
 <body>
     <div class="loader">
         <div class="loader-cont">
-            <img src="img/loader/gif/loader_gif.gif" class="loader-gif">
+            <img src="https://www.suaraproduction.com/img/loader/gif/loader_gif.gif" class="loader-gif">
         </div>
     </div>
     <header>
