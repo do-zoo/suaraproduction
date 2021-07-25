@@ -1,5 +1,3 @@
-$(document).ready(function(){
-    $("body").hide();
-    $('.loader').hide();
-    $("body").show();
-});
+$(window).on("load",function() {
+    $(".loader").fadeOut(1000);
+})
