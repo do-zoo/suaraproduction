@@ -82,7 +82,7 @@ $dataStandardPack = query("SELECT * FROM data_paket_webinar WHERE kategori = 'ST
 
             <nav class="navbar">
                 <ul class="navbar-list">
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="https://www.suaraproduction.com/">HOME</a></li>
                     <li><a class="active" href="#our-services">OUR SERVICES</a>
                         <div class="sub-menu sub-menu-services">
                             <ul>

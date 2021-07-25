@@ -66,7 +66,7 @@
 
             <nav class="navbar">
                 <ul class="navbar-list">
-                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a class="active" href="https://www.suaraproduction.com/">HOME</a></li>
                     <li><a href="#our-services">OUR SERVICES</a>
                         <div class="sub-menu sub-menu-services">
                             <ul>
