@@ -1,5 +1,6 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "suara_production");
+// $conn = mysqli_connect("localhost", "root", "", "suara_production");
+$conn = mysqli_connect("localhost", "n1498735_sp_admin", "31Oktober88", "n1498735_suara_production");
 
 function query($query)
 {
