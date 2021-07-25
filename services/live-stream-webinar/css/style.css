@@ -620,7 +620,7 @@ header:after {
 .left-content,
 .right-content {
     width: 100%;
-    height: 110vh;
+    height: 100vh;
 }
 
 .left-content {
@@ -1071,5 +1071,18 @@ footer {
     .copyright {
         line-height: 2.5rem;
         font-size: 12px;
+    }
+}
+
+@media (max-width:560px) {
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-power-isi {
+        flex-direction: column;
     }
 }
